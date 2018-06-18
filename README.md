@@ -19,7 +19,7 @@
 
 * Copy **meltyElement_ArmorPanel.py** to **\res_mods\configs\xvm\py_macro\**
 
-* Copy **ArmorPanel.xc**, **meltyElementArmorPanel.xc**, and **meltyElementProtractor.xc** to where your XVM boot configs points to. Default is:**\res_mods\configs\xvm\default\**
+* Copy **ArmorPanel.xc**, **meltyElementArmorPanel.xc**, and **meltyElementProtractor.xc** to where your XVM boot configs points to. Default is: **\res_mods\configs\xvm\default\**
 
 
 * In the file **battleLabels.xc** add:
