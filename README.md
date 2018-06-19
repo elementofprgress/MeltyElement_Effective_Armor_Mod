@@ -22,14 +22,14 @@ Options can be found in the **ArmorPanel.xc** file.
 
 ### Prerequisites
 
-* Install the font **\RequiredFont\ZeroThrees.ttf**
+* Install the font **\source\resources\font\ZeroThrees.ttf**
+
+**Included **@xvm.xc** and **battleLabels.xc** files are for the release _example_ only. Overwritting your own XVM config with them will likely break your XVM. Use them as a guide if needed to see how and where additional lines are added/merged. **
 
 ### Installing
 
 
-**To install you must manually merge XVM .xc files.**
-
-Included **@xvm.xc** and **battleLabels.xc** files are there for example only. Do not copy paste them over your XVM files.
+**To install you must manually merge some XVM .xc files.**
 
 * In your file **battleLabels.xc** add:
 
@@ -56,23 +56,37 @@ Included **@xvm.xc** and **battleLabels.xc** files are there for example only. D
 ```
 
 
-* Copy the folder **\res_mods\mods\shared_resources\xvm\res\MeltyElement** and its contents to **<World_of_Tanks_Path>\res_mods\mods\shared_resources\xvm\res\MeltyElement** folder.
+* Copy **source\python\meltyElement_ArmorPanel.py** to **_<World_of_Tanks_Path>_\res_mods\configs\xvm\py_macro**
 
-* Copy the folder **res_mods\1.0.2.1\objects** and its contents to **<World_of_Tanks_Path>res_mods\<World_of_Tanks_Version>\objects** folder.
+* Copy **source\xvm\ArmorPanel.xc**, **source\xvm\meltyElementArmorPanel.xc**, and **source\xvm\meltyElementProtractor.xc** to where your XVM boot config( **res_mods\configs\xvm\xvm.xc** ) points to. 
+Default is: **_<World_of_Tanks_Path>_\res_mods\configs\xvm\default**
 
-* Copy **meltyElement_ArmorPanel.py** to **<World_of_Tanks_Path>\res_mods\configs\xvm\py_macro**
+* Copy the folder **\source\resources\textures\ArmorPanel** and its contents to **_<World_of_Tanks_Path>_\res_mods\mods\shared_resources\xvm\res\MeltyElement** folder.
 
-* Copy **ArmorPanel.xc**, **meltyElementArmorPanel.xc**, and **meltyElementProtractor.xc** to where your XVM boot configs points to. Default is: **<World_of_Tanks_Path>\res_mods\configs\xvm\default**
+* Copy the folder **\source\resources\textures\Protractor** and its contents to **_<World_of_Tanks_Path>_\res_mods\mods\shared_resources\xvm\res\MeltyElement** folder.
 
+Example image path:
+```
+  <World_of_Tanks_Path>\res_mods\mods\shared_resources\xvm\res\MeltyElement\ArmorPanel\armorFrame.png
+```
+
+* Copy the folder **source\resources\models\objects** and its contents to **<World_of_Tanks_Path>\res_mods\<World_of_Tanks_Version>\objects** folder.
+
+Example objects path:
+```
+  <World_of_Tanks_Path>\res_mods\1.0.2.1\objects\debugDot.model
+```
 
 
 ## Known Issues
 
 * Protractor is simi-functional in SPG/Arty due to rotation issues. It is not recommended to try and use in SPG/Arty yet.
-* ArmorPanel element's position and visibility can become incorrect when looking very far to the left/right or behind your tank
-* Effective armor text rarely fails to display for one battle.
+* Looking very far to the left/right or behind your tank can result in some parts of the ArmorPanel position and visibility being incorrect.
 * When viewing the debug render with the cameraAngle option set to True. The debug render is impossible to see because it (correctly) displays the collision points based on the camera angles.
 * Does not fully/correctly reinitialize if XVM is reloaded live.
+* At times incorrect information can be displayed during preround. This corrects itself once the battle starts.
+* During preround the Armor Panel will not update with the camera movement.
+* Preround initilization does not always fully update the armor panel.
 
 
 
