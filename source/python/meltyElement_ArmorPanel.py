@@ -13,7 +13,7 @@ import Math
 # -------------------------
 # WoT Events
 # -------------------------
-from Avatar import PlayerAvatar
+# from Avatar import PlayerAvatar
 from gui.Scaleform.daapi.view.battle.classic.stats_exchange import FragsCollectableStats
 from gui.Scaleform.daapi.view.battle.shared.battle_timers import PreBattleTimer
 from Vehicle import Vehicle
@@ -166,7 +166,6 @@ class MeltyElementProtractor:
 
     # noinspection PyUnusedLocal
     def setArtyProtractor(self, turretYawDeg, leftArc, rightArc, tankYawDeg, aimMode):
-        utills.eDebug("setArtyProtractor")
         turYawR = (0 - turretYawDeg)
         eAP.front_txt_alpha = 0
         eAP.front_sqrt_alpha = 0
@@ -273,7 +272,7 @@ class EffectiveArmorPanel:
         self.hitHullHeight = config.get('armorPanel/eAP/hitHullHeight', 0.7)
 
     def showArmorPanel(self):
-        if config.get('armorPanel/eAP/enableEffArmor', True):
+        if ME_Tank.tankType != "SPG" and config.get('armorPanel/eAP/enableEffArmor', True):
             self.enable = True
         else:
             self.enable = False
@@ -446,8 +445,8 @@ class EffectiveArmorPanel:
                 fakeShotStart_.y = fakeShotAimPoint_.y
                 fakeShotStart = BigWorld.entity(currTarget.id).appearance.compoundModel.node('gun').position
                 fakeShotAimPoint = playerVehiclePos + utills.getNormalisedVector(self.upDir).scale(fakeHitHullHeight)
-            except:
-                utills.eDebug("error with eAP.useTargetGunY and BigWorld.target() is not None")
+            except Exception as eTargetGunY:
+                utills.eDebug(eTargetGunY, "error with eAP.useTargetGunY and BigWorld.target() is not None")
                 fakeShotStart = shotPoint + utills.getNormalisedVector(shotRay).scale(self.rayLength)
                 fakeShotAimPoint = playerVehiclePos + utills.getNormalisedVector(self.upDir).scale(fakeHitHullHeight)
                 if self.useGunPitch:
@@ -548,7 +547,7 @@ class ArmorPanelDebugRender(object):
         self.drawDebugRender = False
 
     def startBattle(self):
-        InputHandler.g_instance.onKeyDown += self._injectButton
+        InputHandler.g_instance.onKeyDown += self._injectAPButton
         dataEnable = True
         if dataEnable:
             self.player = BigWorld.player()
@@ -568,7 +567,7 @@ class ArmorPanelDebugRender(object):
                 self.modelFakeAimPos._StaticObjectMarker3D__model.castsShadow = False
 
     def stopBattle(self):
-        InputHandler.g_instance.onKeyDown -= self._injectButton
+        InputHandler.g_instance.onKeyDown -= self._injectAPButton
         self.modelFakeHitVisible = False
         self.modelFakeShotVisible = False
         if self.modelFakeHitPos is not None:
@@ -615,47 +614,48 @@ class ArmorPanelDebugRender(object):
         if self.modelFakeAimPos is not None and self.modelFakeAimPos._StaticObjectMarker3D__model and self.modelFakeAimPos._StaticObjectMarker3D__model.visible:
             self.modelFakeAimPos._StaticObjectMarker3D__model.visible = False
 
-    def _injectButton(self, event):
+    def _injectAPButton(self, event):
         # TODO - Save custom hit height per vehicle
-        # adjust the hull hit height up
-        if event.key == 66 and event.isKeyDown():
-            eAP.hitHullHeight = float(eAP.hitHullHeight) + 0.25
-            hullHeightMsg = "MeltyElement AP Hull Height Multi + 0.05 to " + str(eAP.hitHullHeight)
-            ctrl = g_appLoader.getDefBattleApp()
-            if ctrl is not None:
-                battle_page = ctrl.containerManager.getContainer(ViewTypes.VIEW).getView()
-                battle_page.components['battlePlayerMessages'].as_showGreenMessageS(None, hullHeightMsg)
-        # adjust the hull hit height down
-        if event.key == self.hitDown and event.isKeyDown():
-            eAP.hitHullHeight = float(eAP.hitHullHeight) - 0.25
-            hullHeightMsg = "MeltyElement AP Hull Height Multi - 0.05 to " + str(eAP.hitHullHeight)
-            ctrl = g_appLoader.getDefBattleApp()
-            if ctrl is not None:
-                battle_page = ctrl.containerManager.getContainer(ViewTypes.VIEW).getView()
-                battle_page.components['battlePlayerMessages'].as_showGreenMessageS(None, hullHeightMsg)
-        # reset the hull hit height to default/config value
-        if event.key == self.hitDefault and event.isKeyDown():
-            eAP.hitHullHeight = config.get('armorPanel/eAP/hitHullHeight', 0.7)
-            hullHeightMsg = "MeltyElement AP Hull Height Multi reset to " + str(eAP.hitHullHeight)
-            ctrl = g_appLoader.getDefBattleApp()
-            if ctrl is not None:
-                battle_page = ctrl.containerManager.getContainer(ViewTypes.VIEW).getView()
-                battle_page.components['battlePlayerMessages'].as_showGreenMessageS(None, hullHeightMsg)
-        # Toggle the debugRender on/off
-        if event.key == self.toggleDrawDebugRender and event.isKeyDown():
-            self.drawDebugRender = not self.drawDebugRender
-            self.modelFakeHitVisible = not self.modelFakeHitVisible
-            self.modelFakeShotVisible = not self.modelFakeShotVisible
-            message = "MeltyElement AP Debug Render - On" if self.drawDebugRender else "MeltyElement AP Debug Render - OFF"
-            ctrl = g_appLoader.getDefBattleApp()
-            if ctrl is not None:
-                battle_page = ctrl.containerManager.getContainer(ViewTypes.VIEW).getView()
-                if self.drawDebugRender:
-                    battle_page.components['battlePlayerMessages'].as_showGreenMessageS(None, message)
-                    self._setVisible()
-                else:
-                    battle_page.components['battlePlayerMessages'].as_showRedMessageS(None, message)
-                    self._hideVisible()
+        if g_appLoader.getDefBattleApp():
+            # adjust the hull hit height up
+            if event.key == self.toggleDrawDebugRender and event.isKeyDown():
+                eAP.hitHullHeight = float(eAP.hitHullHeight) + 0.25
+                hullHeightMsg = "MeltyElement AP Hull Height Multi + 0.05 to " + str(eAP.hitHullHeight)
+                ctrl = g_appLoader.getDefBattleApp()
+                if ctrl is not None:
+                    battle_page = ctrl.containerManager.getContainer(ViewTypes.VIEW).getView()
+                    battle_page.components['battlePlayerMessages'].as_showGreenMessageS(None, hullHeightMsg)
+            # adjust the hull hit height down
+            if event.key == self.hitDown and event.isKeyDown():
+                eAP.hitHullHeight = float(eAP.hitHullHeight) - 0.25
+                hullHeightMsg = "MeltyElement AP Hull Height Multi - 0.05 to " + str(eAP.hitHullHeight)
+                ctrl = g_appLoader.getDefBattleApp()
+                if ctrl is not None:
+                    battle_page = ctrl.containerManager.getContainer(ViewTypes.VIEW).getView()
+                    battle_page.components['battlePlayerMessages'].as_showGreenMessageS(None, hullHeightMsg)
+            # reset the hull hit height to default/config value
+            if event.key == self.hitDefault and event.isKeyDown():
+                eAP.hitHullHeight = config.get('armorPanel/eAP/hitHullHeight', 0.7)
+                hullHeightMsg = "MeltyElement AP Hull Height Multi reset to " + str(eAP.hitHullHeight)
+                ctrl = g_appLoader.getDefBattleApp()
+                if ctrl is not None:
+                    battle_page = ctrl.containerManager.getContainer(ViewTypes.VIEW).getView()
+                    battle_page.components['battlePlayerMessages'].as_showGreenMessageS(None, hullHeightMsg)
+            # Toggle the debugRender on/off
+            if event.key == self.toggleDrawDebugRender and event.isKeyDown():
+                self.drawDebugRender = not self.drawDebugRender
+                self.modelFakeHitVisible = not self.modelFakeHitVisible
+                self.modelFakeShotVisible = not self.modelFakeShotVisible
+                message = "MeltyElement AP Debug Render - On" if self.drawDebugRender else "MeltyElement AP Debug Render - OFF"
+                ctrl = g_appLoader.getDefBattleApp()
+                if ctrl is not None:
+                    battle_page = ctrl.containerManager.getContainer(ViewTypes.VIEW).getView()
+                    if self.drawDebugRender:
+                        battle_page.components['battlePlayerMessages'].as_showGreenMessageS(None, message)
+                        self._setVisible()
+                    else:
+                        battle_page.components['battlePlayerMessages'].as_showRedMessageS(None, message)
+                        self._hideVisible()
 
 
 class ElementModUtilities(object):
@@ -675,7 +675,7 @@ class ElementModUtilities(object):
                 print(debugLine)
             else:
                 pass
-        except:
+        except Exception:
             print("ERROR: [Element_ArmorPanel] [" + datetime.datetime.now().strftime("%H:%M:%S.%f") + "]: utills.eDebug FAILED!")
 
     @staticmethod
@@ -701,6 +701,7 @@ class ElementModUtilities(object):
                         return distance, hitAngleCos, materialInfo.armor
         return None
 
+
 #
 # init classes
 #
@@ -719,7 +720,7 @@ def resetAll():
     try:
         if eAP.armorCallBack is not None:
             BigWorld.cancelCallback(eAP.armorCallBack)
-    except:
+    except Exception:
         pass
     if not isReset:
         utills.eDebug("Resetting AP")
@@ -756,7 +757,7 @@ def setup(playerVehicle, localPlayer):
         try:
             if ME_Tank.callbackID is not None:
                 BigWorld.cancelCallback(ME_Tank.callbackID)
-        except:
+        except Exception:
             pass
         ME_Tank.getPlayerTankValues()
         eAP.showArmorPanel()
@@ -764,7 +765,7 @@ def setup(playerVehicle, localPlayer):
         if ME_Tank.tankType != "Tank" and AnglePanel.enable:
             AnglePanel.initialValues()
             AnglePanel.updateProtractor(0.0, 0.0, int(ME_Tank.leftArc), int(ME_Tank.rightArc))
-        if ME_Tank.tankType != "SPG" and eAP.enable:
+        if eAP.enable:
             eAP.updateEffArmor(ME_Tank.effFrontArmor, 0, 0)
         isReset = False
         as_event('ON_ARMOR')
@@ -779,14 +780,13 @@ def Main_update():
             try:
                 if eAP.armorCallBack is not None:
                     BigWorld.cancelCallback(eAP.armorCallBack)
-            except:
+            except Exception:
                 pass
             player = BigWorld.player()
             playerVehicle = BigWorld.player().getVehicleAttached()
             gunRotator = player.gunRotator
             vehicleTypeDescriptor = player.vehicleTypeDescriptor
             turretYawRad = gunRotator.turretYaw
-            # turretYawRad = Math.Matrix(gunRotator.turretMatrix).yaw
             turretYawDeg = math.degrees(turretYawRad)
             ME_Tank.turretYawDeg = turretYawDeg  # don't need just for debug out
 
@@ -833,7 +833,7 @@ def Main_update():
         try:
             if eAP.armorCallBack is not None:
                 BigWorld.cancelCallback(eAP.armorCallBack)
-        except:
+        except Exception:
             pass
 
 
@@ -842,18 +842,18 @@ def Main_update():
 #
 
 # TODO - Create a flow for gamemodes like frontlines where players change vehicles without leaving world
-@registerEvent(PlayerAvatar, 'onVehicleChanged')
-def ME_AP_PlayerAvatar_onVehicleChanged(self):
-    utills.eDebug('Avatar vehicle has changed to %s' % self.vehicle)
-    if self.vehicle is not None:
-        control = self.guiSessionProvider.shared.vehicleState
-        if control.isInPostmortem or BigWorld.player().playerVehicleID != self.vehicle.id:
-            ME_Tank.alive = False
-            utills.eDebug("onVehicleChanged in postMortem")
-        else:
-            utills.eDebug("onVehicleChanged: VehicleID:", self.vehicle.id, " matches BigWorld.player ID:", BigWorld.player().playerVehicleID)
-            # ME_Tank.alive = True
-            # setup(self.vehicle, BigWorld.player())
+# @registerEvent(PlayerAvatar, 'onVehicleChanged')
+# def ME_AP_PlayerAvatar_onVehicleChanged(self):
+#     utills.eDebug('Avatar vehicle has changed to %s' % self.vehicle)
+#     if self.vehicle is not None:
+#         control = self.guiSessionProvider.shared.vehicleState
+#         if control.isInPostmortem or BigWorld.player().playerVehicleID != self.vehicle.id:
+#             ME_Tank.alive = False
+#             utills.eDebug("onVehicleChanged in postMortem")
+#         else:
+#             utills.eDebug("onVehicleChanged: VehicleID:", self.vehicle.id, " matches BigWorld.player ID:", BigWorld.player().playerVehicleID)
+#             # ME_Tank.alive = True
+#             # setup(self.vehicle, BigWorld.player())
 
 
 # noinspection PyUnusedLocal
@@ -877,8 +877,14 @@ def ME_AP_Vehicle_onEnterWorld(self, prereqs):
 def ME_AP_APhideCountdown(self, state, speed):
     utills.eDebug("hideCountdown")
     if state == 3:
-        utills.eDebug("Battle Started, trigger initial Armor Panel update")
-        Main_update()
+        if eAP.enable or AnglePanel.enable:
+            utills.eDebug("Battle Started, trigger initial Armor Panel update")
+            Main_update()
+        else:
+            # both ArmorPanel and Angle Panel are not enabled so clear debug render and reset for next tank/battle
+            utills.eDebug("Battle Started, ArmorPanel and Protractor both disabled")
+            debugRender.stopBattle()
+            resetAll()
 
 
 # noinspection PyUnusedLocal
@@ -1083,7 +1089,7 @@ def angle_panel_rotation():
     return AnglePanel.rotation
 
 
-# TODO - Massive code clean up & refactoring. - Verify options functionality. Refactor option names so they make more sense and organize/write descriptions for them in armoredpanel.xc
+# TODO - Code clean up and refactoring. Verify Options.
 
 print "--------------------------------------------------------------------------------------"
 print "[Element_ArmorPanel]: Loading Element ArmorPanel & Protractor Mod " + time.strftime("%H:%M:%S")

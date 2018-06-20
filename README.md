@@ -1,4 +1,4 @@
-# Element ArmorPanel & Protractor Mod
+# Element ArmorPanel & Protractor Mod - [XVM - py_macro]
 # *Mod is in an Alpha state and many features, options, and some general functionality have yet to be tested.*
 
 This mod is a remake of the ArmorPanel & Protractor that was included in the original MeltyMap sights.
@@ -10,7 +10,7 @@ The height that the collision check is done is adjustable and includes a debug r
 
 Options can be found in the **ArmorPanel.xc** file.
 
-... *complete project description  and screenshots*
+... *complete project description  and screen shots*
 
 ## Additional Features
 
@@ -24,7 +24,7 @@ Options can be found in the **ArmorPanel.xc** file.
 
 * Install the font **\source\resources\font\ZeroThrees.ttf**
 
-**Included **@xvm.xc** and **battleLabels.xc** files are for the release _example_ only. Overwritting your own XVM config with them will likely break your XVM. Use them as a guide if needed to see how and where additional lines are added/merged. **
+**Included **@xvm.xc** and **battleLabels.xc** files are for the release _example_ only. Overwriting your own XVM config with them will likely break your XVM. Use them as a guide if needed to see how and where additional lines are added/merged. **
 
 ### Installing
 
@@ -80,13 +80,13 @@ Example objects path:
 
 ## Known Issues
 
-* Protractor is simi-functional in SPG/Arty due to rotation issues. It is not recommended to try and use in SPG/Arty yet.
+* Protractor is semi-functional in SPG/Arty due to rotation issues. It is not recommended to try and use in SPG/Arty yet.
 * Looking very far to the left/right or behind your tank can result in some parts of the ArmorPanel position and visibility being incorrect.
 * When viewing the debug render with the cameraAngle option set to True. The debug render is impossible to see because it (correctly) displays the collision points based on the camera angles.
 * Does not fully/correctly reinitialize if XVM is reloaded live.
 * At times incorrect information can be displayed during preround. This corrects itself once the battle starts.
 * During preround the Armor Panel will not update with the camera movement.
-* Preround initilization does not always fully update the armor panel.
+* Preround initialization does not always fully update the armor panel.
 
 
 

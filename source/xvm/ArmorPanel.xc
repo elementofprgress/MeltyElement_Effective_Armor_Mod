@@ -29,10 +29,10 @@
 	  "showInArcade": true,
 	  //use camera rotation for Protractor position. False will lock the Protractor at max value when looking past gun arc. True will let the Protractor move off screen.
 	  "useCameraRotation": true,
-	  // Vertical placement of TD GunArc Protractor ( where 0 is screen center and 1 its bottom ).
+	  // Vertical offset of TD Protractor from Armor Panel.
 	  "protractorOffsetWhenTD": 43,
-	  // WIP / Not Implimented - Displays GunArc Critical Angle Protractor for SPG's. 
-	  "enableProtractorWhenSPG": true,
+	  // WIP / Not Implemented - Displays GunArc Critical Angle Protractor for SPG's. 
+	  "enableProtractorWhenSPG": false,
 	  // placement of SPG GunArc Protractor. ( In percentage of lower half vertical screen resolution ) Recommend 0 or ~0.7-0.1
 	  "ordinateWhenSPG": 0.1,
 	  // Distance to Pixels ratio, Default is 1m = 8.2px.
@@ -50,7 +50,7 @@
 	  // Key_numstar xx
 	  "posDefaultKey": 55
     },
-     // rate at which armor panel loopsupdates 0.033 = 30hz 0.016 = 60hz fps hit
+     // rate at which armor panel loops updates 0.033 = 30hz 0.016 = 60hz fps hit
     "tickRate": 0.022
   }
 }
