@@ -1,0 +1,51 @@
+﻿<mmps>
+	<config>
+		<enableEffArmor>true</enableEffArmor>    <!-- Displays effective armor calculation. ** vehicles missing arc values in the "vehiclesData" are calcualted without armor slope. -->
+		<cameraAngle>true</cameraAngle> <!-- effective armor calculation follows the camera, if false it follow your turret -->
+		<enableRulerWhenTD>true</enableRulerWhenTD>    <!-- Displays GunArc Critical Angle Ruler for TD's. -->
+		<enableRulerWhenSPG>true</enableRulerWhenSPG>    <!-- Displays GunArc Critical Angle Ruler for SPG's. -->
+		<ordinateWhenTank>0.80</ordinateWhenTank>    <!-- Vertical placement of Effective armor calculation ( In percentage of lower half vertical screen resolution ). -->
+		<ordinateWhenTD>0.70</ordinateWhenTD>    <!-- Vertical placement of TD GunArc Ruler ( where 0 is screen center and 1 its bottom ). -->
+		<protractorOffsetWhenTD>43</protractorOffsetWhenTD>
+		<ordinateWhenSPG>0.0</ordinateWhenSPG>    <!-- placement of SPG GunArc Ruler. ( In percentage of lower half vertical screen resolution ) Recommend 0 or ~0.7-0.1 -->
+		<m2pix>8.2</m2pix>    <!-- Distance to Pixels ratio, Default is 1m = 8.2px. -->
+		<xSpacing>0</xSpacing> <!-- GunArc Ruler degre dash'es spacing, default is 0 adaptive. Recommended setting for fixed spacing is 16 or 32. -->
+		<funcKey>17</funcKey>    <!-- Key to trigger extra function, currently no extra functions yet. -->
+		<debug>false</debug>    <!-- warn when no arc found(red dot on panel), print outs etc, etc -->
+		<penIndicator>true</penIndicator> <!-- very basic indicator that targets pen compared to eff front armor. -->
+		<debugRenderHitPosKey>66</debugRenderHitPosKey>
+		<posUpKey>78</posUpKey>
+		<posDownKey>74</posDownKey>
+		<posDefaultKey>55</posDefaultKey>
+		<hitHullHeight>0.7</hitHullHeight>
+		<useTargetGunY>true</useTargetGunY>
+		<rayLength>8.0</rayLength>
+		<gunPitchHitAngle>true</gunPitchHitAngle>
+		
+		<!-- The "funcKey" valid keycodes are: 
+		"backspace" - 8, "tab" - 9, "enter" - 13, "shift" - 16, "ctrl" - 17, "alt" - 18, "pause/break" - 19, "caps lock" - 20, "escape" - 27, "page up" - 33, "page down" - 34, 
+		"end" - 35, "home" - 36, "left arrow" - 37, "up arrow" - 38, "right arrow" - 39, "down arrow" - 40, "insert" - 45, "delete" - 46, "0" - 48, "1" - 49, "2" - 50, "3"4" - 52, 
+		"6" - 54, "7" - 55, "8" - 56, "9" - 57, "a" - 65, "b" - 66, "c" - 67, "d" - 68, "e" - 69, "f" - 70, "g" - 71, "h" - 72, "i" - 73, "j" - 74, "k" - 75, "l" - 76, "m" - 77, 
+		"n" - 78, "o" - 79, "p" - 80, "q" - 81, "r" - 82, "s" - 83, "t" - 84, "u" - 85, "v" - 86, "w" - 87, "x" - 88, "y" - 89, "z" - 90, "left window key" - 91, "right window key" - 92, 
+		"select key" - 93, "numpad 0" - 96, "numpad 1" - 97, "numpad 2" - 98, "numpad 3" - 99, "numpad 4" - 100, "numpad 5" - 101, "numpad 6" - 102, "numpad 7" - 103, "numpad 8" - 104, 
+		"numpad 9" - 105, "multiply" - 106, "add" - 107, "subtract" - 109, "decimal point" - 110, "divide" - 111, "f1" - 112, "f2" - 113, "f3" - 114, "f4" - 115, "f5" - 116, "f6" - 117, 
+		"f7" - 118, "f8" - 119, "f9" - 120, "f10" - 121, "f11" - 122, "f12" - 123, "num lock" - 144, "scroll lock" - 145, "semi-colon" - 186, "equal sign" - 187, "comma" - 188, "dash" - 189, 
+		"period" - 190, "forward slash" - 191, "grave accent" - 192, "open bracket" - 219, "back slash" - 220, "close braket" - 221, "single quote" - 222.
+		-->
+	</config>
+	<gundata>
+	</gundata>
+	<vehiclesData>
+    <!-- If GunArc Rulers behavior are incorect or You want them to display diffrent, define it here. -->
+    <!-- "name" Vehicle name. Ingame-name of player's vehicle icon in lower case without file name suffix -->
+    <!-- "type" Vehicle type tags: Tank/TD/SPG, ** type="0" to not display GunArc Ruler. -->
+    <!-- "leftArc" Gun left angle limit. -->
+    <!-- "rightArc" Gun right angle limit. -->
+    <!-- "front" Thickness of front armor plate. -->
+    <!-- "arc" Front armor plate inclination in relation to horizontal plane. -->
+    <!-- "arc2" (if exist). Front armor plate inclination in relation to vertical plane of prolonged "Z" axis of Vehicle. -->
+    <!-- "arc3" (if exist). Angle between the radius of the arc and the prolonged "Z" axis of the vehicle, if vehicle has Round Front Plate -->
+    <!-- "side" Thickness of side armor without truck's. -->
+    <vehicle name="ussr_R87_T62A_sport" type="Tank" arc="0" arc2="0" arc3="0"/>
+  </vehiclesData>
+</mmps>

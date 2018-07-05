@@ -1,0 +1,685 @@
+﻿<mmps>
+	<config>
+		<enableEffArmor>true</enableEffArmor>    <!-- Displays effective armor calculation. ** vehicles missing arc values in the "vehiclesData" are calcualted without armor slope. -->
+		<cameraAngle>true</cameraAngle> <!-- effective armor calculation follows the camera, if false it follow your turret -->
+		<enableRulerWhenTD>true</enableRulerWhenTD>    <!-- Displays GunArc Critical Angle Ruler for TD's. -->
+		<enableRulerWhenSPG>true</enableRulerWhenSPG>    <!-- Displays GunArc Critical Angle Ruler for SPG's. -->
+		<ordinateWhenTank>0.80</ordinateWhenTank>    <!-- Vertical placement of Effective armor calculation ( In percentage of lower half vertical screen resolution ). -->
+		<ordinateWhenTD>0.70</ordinateWhenTD>    <!-- Vertical placement of TD GunArc Ruler ( where 0 is screen center and 1 its bottom ). -->
+		<protractorOffsetWhenTD>43</protractorOffsetWhenTD>
+		<ordinateWhenSPG>0.0</ordinateWhenSPG>    <!-- placement of SPG GunArc Ruler. ( In percentage of lower half vertical screen resolution ) Recommend 0 or ~0.7-0.1 -->
+		<m2pix>8.2</m2pix>    <!-- Distance to Pixels ratio, Default is 1m = 8.2px. -->
+		<xSpacing>0</xSpacing> <!-- GunArc Ruler degre dash'es spacing, default is 0 adaptive. Recommended setting for fixed spacing is 16 or 32. -->
+		<funcKey>17</funcKey>    <!-- Key to trigger extra function, currently no extra functions yet. -->
+		<debug>true</debug>    <!-- warn when no arc found(red dot on panel), print outs etc, etc -->
+		
+		<!-- The "funcKey" valid keycodes are: 
+		"backspace" - 8, "tab" - 9, "enter" - 13, "shift" - 16, "ctrl" - 17, "alt" - 18, "pause/break" - 19, "caps lock" - 20, "escape" - 27, "page up" - 33, "page down" - 34, 
+		"end" - 35, "home" - 36, "left arrow" - 37, "up arrow" - 38, "right arrow" - 39, "down arrow" - 40, "insert" - 45, "delete" - 46, "0" - 48, "1" - 49, "2" - 50, "3"4" - 52, 
+		"6" - 54, "7" - 55, "8" - 56, "9" - 57, "a" - 65, "b" - 66, "c" - 67, "d" - 68, "e" - 69, "f" - 70, "g" - 71, "h" - 72, "i" - 73, "j" - 74, "k" - 75, "l" - 76, "m" - 77, 
+		"n" - 78, "o" - 79, "p" - 80, "q" - 81, "r" - 82, "s" - 83, "t" - 84, "u" - 85, "v" - 86, "w" - 87, "x" - 88, "y" - 89, "z" - 90, "left window key" - 91, "right window key" - 92, 
+		"select key" - 93, "numpad 0" - 96, "numpad 1" - 97, "numpad 2" - 98, "numpad 3" - 99, "numpad 4" - 100, "numpad 5" - 101, "numpad 6" - 102, "numpad 7" - 103, "numpad 8" - 104, 
+		"numpad 9" - 105, "multiply" - 106, "add" - 107, "subtract" - 109, "decimal point" - 110, "divide" - 111, "f1" - 112, "f2" - 113, "f3" - 114, "f4" - 115, "f5" - 116, "f6" - 117, 
+		"f7" - 118, "f8" - 119, "f9" - 120, "f10" - 121, "f11" - 122, "f12" - 123, "num lock" - 144, "scroll lock" - 145, "semi-colon" - 186, "equal sign" - 187, "comma" - 188, "dash" - 189, 
+		"period" - 190, "forward slash" - 191, "grave accent" - 192, "open bracket" - 219, "back slash" - 220, "close braket" - 221, "single quote" - 222.
+		-->
+	</config>
+	<gundata>
+	</gundata>
+	<vehiclesData>
+    <!-- If GunArc Rulers behavior are incorect or You want them to display diffrent, define it here. -->
+    <!-- "name" Vehicle name. Ingame-name of player's vehicle icon in lower case without file name suffix -->
+    <!-- "type" Vehicle type tags: Tank/TD/SPG, ** type="0" to not display GunArc Ruler. -->
+    <!-- "leftArc" Gun left angle limit. -->
+    <!-- "rightArc" Gun right angle limit. -->
+    <!-- "front" Thickness of front armor plate. -->
+    <!-- "arc" Front armor plate inclination in relation to horizontal plane. -->
+    <!-- "arc2" (if exist). Front armor plate inclination in relation to vertical plane of prolonged "Z" axis of Vehicle. -->
+    <!-- "arc3" (if exist). Angle between the radius of the arc and the prolonged "Z" axis of the vehicle, if vehicle has Round Front Plate -->
+    <!-- "side" Thickness of side armor without truck's. -->
+    
+    <!-- CHINA -->
+    <!-- T1 -->
+    <vehicle name="china_Ch06_Renault_NC31" type="Tank" front="16" arc="21" side="16"/>
+	<!-- T2 -->
+	<vehicle name="china_Ch07_Vickers_MkE_Type_BT26" type="Tank" front="5" arc="26" side="12.7"/>
+	<!-- T3 -->
+	<vehicle name="china_Ch08_Type97_Chi_Ha" type="Tank" front="25" arc="16" side="20"/>
+	<!-- T4 -->
+	<vehicle name="china_Ch09_M5" type="Tank" front="28.6" arc="48" side="28.6"/>
+	<!-- T5 -->
+	<vehicle name="china_Ch21_T34" type="Tank" front="45" arc="60" side="45"/>
+	<!-- T6 -->
+	<vehicle name="china_Ch15_59_16" type="Tank" front="30" arc="56" side="20"/>
+	<vehicle name="china_Ch20_Type58" type="Tank" front="45" arc="60" side="45"/>
+	<vehicle name="china_Ch24_Type64" type="Tank" front="12.7" arc="32" side="12.7"/>
+	<!-- T7 -->
+	<vehicle name="china_Ch02_Type62" type="Tank" front="35" arc="56.5" side="20"/>
+	<vehicle name="china_Ch04_T34_1" type="Tank" front="60" arc="55" side="45"/>
+	<vehicle name="china_Ch16_WZ_131" type="Tank" front="35" arc="58" side="20"/>
+	<vehicle name="china_Ch10_IS2" type="Tank" front="100" arc="35" side="90"/>
+	<!-- T8 -->
+	<vehicle name="china_Ch01_Type59" type="Tank" front="100" arc="60" side="80"/>
+	<vehicle name="china_Ch01_Type59_gold" type="Tank" front="100" arc="60" side="80"/>
+	<vehicle name="china_Ch03_WZ_111" type="Tank" front="80" arc="44" side="110"/>
+	<vehicle name="china_Ch05_T34_2" type="Tank" front="70" arc="60" side="45"/>
+	<vehicle name="china_Ch11_110" type="Tank" front="120" arc="53" arc2="52" side="90"/>
+	<vehicle name="china_Ch11_110_IGR" type="Tank" front="120" arc="53" arc2="52" side="90"/>
+	<vehicle name="china_Ch17_WZ131_1_WZ132" type="Tank" front="50" arc="58" side="25"/>
+	<vehicle name="china_Ch17_WZ131_1_WZ132_IGR" type="Tank" front="50" arc="58" side="25"/>
+	<vehicle name="china_Ch14_T34_3" type="Tank" front="90" arc="60" side="50"/>
+	<vehicle name="china_Ch23_112" type="Tank" front="120" arc="68" side="80"/>
+	<vehicle name="china_Ch26_59_Patton" type="Tank" front="100" arc="60.5" side="80"/>
+	<!-- T9 -->
+	<vehicle name="china_Ch18_WZ_120" type="Tank" front="100" arc="60" side="80"/>
+	<vehicle name="china_Ch12_111_1_2_3" type="Tank" front="80" arc="44" side="110"/>
+	<!-- T10 -->
+	<vehicle name="china_Ch19_121" type="Tank" front="120" arc="62" side="80"/>
+	<vehicle name="china_Ch19_121_IGR" type="Tank" front="120" arc="62" side="80"/>
+	<vehicle name="china_Ch25_121_mod_1971B" type="Tank" front="130" arc="62" side="80"/>
+	<vehicle name="china_Ch22_113" type="Tank" front="120" arc="68" side="90"/>
+	
+	<!--Czech-->
+	<vehicle name="czech_Cz01_Skoda_T40" type="Tank" rightArc="0" leftArc="0" front="0" arc="0" arc2="0" side="0"/>
+	<vehicle name="czech_Cz02_TVP_T50" type="Tank" rightArc="0" leftArc="0" front="0" arc="0" arc2="0" side="0"/>
+	<vehicle name="czech_Cz03_LT_vz35" type="Tank" rightArc="0" leftArc="0" front="0" arc="0" arc2="0" side="0"/>
+	<vehicle name="czech_Cz04_T50_51" type="Tank" rightArc="0" leftArc="0" front="0" arc="0" arc2="0" side="0"/>
+	<vehicle name="czech_Cz05_T34_100" type="Tank" rightArc="0" leftArc="0" front="0" arc="0" arc2="0" side="0"/>
+	<vehicle name="czech_Cz06_Kolohousenka" type="Tank" rightArc="0" leftArc="0" front="0" arc="0" arc2="0" side="0"/>
+	<vehicle name="czech_Cz07_TVP_46" type="Tank" rightArc="0" leftArc="0" front="0" arc="0" arc2="0" side="0"/>
+	<vehicle name="czech_Cz08_T_25" type="Tank" rightArc="0" leftArc="0" front="0" arc="0" arc2="0" side="0"/>
+	<vehicle name="czech_Cz09_T_24" type="Tank" rightArc="0" leftArc="0" front="50" arc="0" arc2="0" side="0"/>
+	<vehicle name="czech_Cz10_LT_vz38" type="Tank" rightArc="0" leftArc="0" front="0" arc="0" arc2="0" side="0"/>
+	<vehicle name="czech_Cz11_V_8_H" type="Tank" rightArc="0" leftArc="0" front="0" arc="0" arc2="0" side="0"/>
+	
+	<!-- FRANCE -->
+	<!-- ARTY -->
+	<vehicle name="france__105_leFH18B2" type="SPG" rightArc="15" leftArc="15"/>
+	<vehicle name="france__105_leFH18B2_IGR" type="SPG" rightArc="15" leftArc="15"/>
+	<vehicle name="france_AMX_13F3AM" type="SPG" rightArc="30" leftArc="5"/>
+	<vehicle name="france_Lorraine155_50" type="SPG" rightArc="12" leftArc="12"/>
+	<vehicle name="france_Lorraine155_51" type="SPG" rightArc="15" leftArc="15"/>
+	<vehicle name="france_RenaultBS" type="SPG" rightArc="10" leftArc="10"/>
+	<vehicle name="france_Lorraine39_L_AM" type="SPG" rightArc="10" leftArc="10"/>
+	<vehicle name="france_AMX_105AM" type="SPG" rightArc="13" leftArc="13"/>
+	<vehicle name="france_AMX_Ob_Am105" type="SPG" rightArc="30" leftArc="30"/>
+	<vehicle name="france_Bat_Chatillon155_55" type="SPG" rightArc="180" leftArc="180"/>
+	<vehicle name="france_Bat_Chatillon155_58" type="SPG" rightArc="180" leftArc="180"/>
+	<!-- T1 -->
+	<vehicle name="france_RenaultFT" type="Tank" front="16" arc="20" side="16"/>
+	<!-- T2 -->
+	<vehicle name="france_Hotchkiss_H35" type="Tank" front="30" arc="5.5" side="40"/>
+	<vehicle name="france_F50_FCM36_20t" type="Tank" front="40" arc="25" side="40"/>
+	<vehicle name="france_F49_RenaultR35" type="Tank" front="40" arc="25.5" side="40"/>
+	<vehicle name="france_D1" type="Tank" front="25" arc="18" side="30"/>
+	<vehicle name="france_RenaultFT_AC" type="TD" front="15" arc="85" side="15"/>
+	<!-- T3 -->
+	<vehicle name="france_D2" type="Tank" front="35" arc="24" side="40"/>
+	<vehicle name="france_FCM_36Pak40" type="TD" rightArc="7" leftArc="7" front="20" arc="20.5" arc2="34" side="40"/>
+	<vehicle name="france_AMX38" type="Tank" front="60" arc="24" side="40"/>
+	<vehicle name="france_F44_Somua_S35" type="Tank" front="47" arc="18" side="40"/>
+	<vehicle name="france_RenaultUE57" type="TD" rightArc="7" leftArc="7" front="9" arc="10.5" side="6"/>
+	<!-- T4 -->
+	<vehicle name="france_B1" type="Tank" front="60" arc="15.5" side="60"/>
+	<vehicle name="france_F70_SARL42" type="Tank" front="40" arc="19" side="30"/>
+	<vehicle name="france_AMX40" type="Tank" front="60" arc="27.5" arc2="42.5" side="65"/>
+	<vehicle name="france_Somua_Sau_40" type="TD" rightArc="8" leftArc="7" front="36" arc="29.5" side="25"/>
+	<!-- T5 -->
+	<vehicle name="france_BDR_G1B" type="Tank" front="60" arc="46" side="60"/>
+	<vehicle name="france_S_35CA" type="TD" rightArc="29" leftArc="15" front="36" arc="20" side="35"/>
+	<vehicle name="france_S_35CA_IGR" type="TD" rightArc="29" leftArc="15" front="36" arc="20" side="35"/>
+	<vehicle name="france_ELC_AMX" type="TD" rightArc="15" leftArc="15" front="14" arc="56" side="10"/>
+	<vehicle name="france_ELC_AMX_IGR" type="TD" rightArc="15" leftArc="15" front="14" arc="56" side="10"/>
+	<vehicle name="france_F11_Renault_G1R" type="Tank" front="60" arc="20.5" side="60"/>
+	<!-- T6 -->
+	<vehicle name="france_F06_ARL_44" type="Tank" front="120" arc="50" side="50"/>
+	<vehicle name="france_AMX_12t" type="Tank" front="50" arc="25" side="20"/>
+	<vehicle name="france_ARL_V39" type="TD" rightArc="7" leftArc="7" front="60" arc="46" side="40"/>
+	<!-- T7 -->
+	<vehicle name="france_AMX_13_75" type="Tank" front="40" arc="62" side="20"/>
+	<vehicle name="france_F69_AMX13_57_100" type="Tank" front="15" arc="67.2" side="20"/>
+	<vehicle name="france_F69_AMX13_57_100_GrandFinal" type="Tank" front="15" arc="67.2" side="20"/>
+	<vehicle name="france_F07_AMX_M4_1945" type="Tank" front="90" arc="50" side="40"/>
+	<vehicle name="france_F35_AMX_AC_Mle1946" type="TD" rightArc="10" leftArc="7" front="120" arc="45" side="40"/>
+	<!-- T8 -->
+	<vehicle name="france_F08_AMX_50_100" type="Tank" front="90" arc="55" side="35"/>
+	<vehicle name="france_F08_AMX_50_100_IGR" type="Tank" front="90" arc="55" side="35"/>
+	<vehicle name="france_F17_AMX_13_90" type="Tank" front="40" arc="62" side="20"/>
+	<vehicle name="france_F17_AMX_13_90_IGR" type="Tank" front="40" arc="62" side="20"/>
+	<vehicle name="france_F36_AMX_AC_Mle1948" type="TD" rightArc="10" leftArc="10" front="150" arc="55" side="40"/>
+	<vehicle name="france_F36_AMX_AC_Mle1948_IGR" type="TD" rightArc="10" leftArc="10" front="150" arc="55" side="40"/>
+	<vehicle name="france_F64_AMX_50Fosh_155" type="Tank" front="120" arc="35" side="80"/>
+	<vehicle name="france_F68_AMX_Chasseur_de_char_46" type="Tank" front="30" arc="52" side="20"/>
+	<!-- T9 -->
+	<vehicle name="france_F09_AMX_50_120" type="Tank" front="90" arc="50" arc2="30" side="80"/>
+	<vehicle name="france_F71_AMX_30_prototype" type="Tank" front="40" arc="75" side="30"/>
+	<vehicle name="france_F72_AMX_30" type="Tank" front="55" arc="68" side="30"/>
+	<vehicle name="france_Lorraine40t" type="Tank" front="40" arc="50" arc2="43" side="40"/>
+	<vehicle name="france_AMX50_Foch" type="TD" rightArc="10" leftArc="10" front="180" arc="54" side="40"/>
+	<!-- T10 -->
+	<vehicle name="france_Bat_Chatillon25t" type="Tank" front="50" arc="65" side="40"/>
+	<vehicle name="france_Bat_Chatillon25t_IGR" type="Tank" front="50" arc="65" side="40"/>
+	<vehicle name="france_F10_AMX_50B" type="Tank" front="100" arc="72" arc2="20" side="30"/>
+	<vehicle name="france_F10_AMX_50B_fallout" type="Tank" front="100" arc="72" arc2="20" side="30"/>
+	<vehicle name="france_AMX_50Fosh_155" type="TD" rightArc="6" leftArc="6" front="180" arc="54" side="40"/>
+	
+	<!-- GERMANY -->
+	<!-- ARTY -->
+	<vehicle name="germany_G02_Hummel" type="SPG" rightArc="15" leftArc="15"/>
+	<vehicle name="germany_G_Panther" type="SPG" rightArc="26" leftArc="26"/>
+	<vehicle name="germany_G_Tiger" type="SPG" rightArc="5" leftArc="5"/>
+	<vehicle name="germany_G_E" type="SPG" rightArc="6" leftArc="6"/>
+	<vehicle name="germany_G93_GW_Mk_VIe" type="SPG" rightArc="5" leftArc="5"/>
+	<vehicle name="germany_G11_Bison_I" type="SPG" rightArc="5.5" leftArc="5.5"/>
+	<vehicle name="germany_G19_Wespe" type="SPG" rightArc="20" leftArc="20"/>
+	<vehicle name="germany_G22_Sturmpanzer_II" type="SPG" rightArc="6.5" leftArc="6.5"/>
+	<vehicle name="germany_Pz_Sfl_IVb" type="SPG" rightArc="35" leftArc="35"/>
+	<vehicle name="germany_G23_Grille" type="SPG" rightArc="5" leftArc="5"/>
+	<vehicle name="germany_GW_Tiger_P" type="SPG" rightArc="5" leftArc="5"/>
+	<!-- T1 -->
+	<vehicle name="germany_Ltraktor" type="Tank" front="14" arc="0" side="12"/>
+	<!-- T2 -->
+	<vehicle name="germany_PzI" type="Tank" front="13" arc="21" side="13"/>
+	<vehicle name="germany_G07_Pz35t" type="Tank" front="25" arc="19" side="16"/>
+	<vehicle name="germany_G08_Pz35t" type="Tank" front="25" arc="19" side="16"/>
+	<vehicle name="germany_G06_PzII" type="Tank" front="30" arc="10" side="20"/>
+	<vehicle name="germany_H39_captured" type="Tank" front="40" arc="20" side="40"/>
+	<vehicle name="germany_G108_PzKpfwII_AusfD" type="Tank" front="30" arc="8" side="14.5"/>
+	<vehicle name="germany_G21_PanzerJager_I" type="TD" rightArc="17.5" leftArc="17.5" front="13" arc="19.5" side="13"/>
+	<!-- T3 -->
+	<vehicle name="germany_Pz_IV_AusfA" type="Tank" front="14.5" arc="8.5" side="14.5"/>
+	<vehicle name="germany_PzIII_A" type="Tank" front="14.5" arc="11" side="14.5"/>
+	<vehicle name="germany_Pz38t" type="Tank" front="25" arc="17" side="15"/>
+	<vehicle name="germany_T_15" type="Tank" front="30" arc="12" side="20"/>
+	<vehicle name="germany_G34_S35_captured" type="Tank" front="36" arc="15" side="35"/>
+	<vehicle name="germany_G36_PzII_J" type="Tank" front="70" arc="10" side="50"/>
+	<vehicle name="germany_G82_Pz_II_AusfG" type="Tank" front="30" arc="8.5" side="14.5"/>
+	<vehicle name="germany_PzI_ausf_C" type="Tank" front="30" arc="10" side="20"/>
+	<vehicle name="germany_G100_Gtraktor_Krupp" type="Tank" front="14" arc="43.5" side="14"/>
+	<vehicle name="germany_G20_Marder_II" type="TD" rightArc="25" leftArc="32" front="30" arc="10" side="14.5"/>
+	<!-- T4 -->
+	<vehicle name="germany_Pz_IV_AusfD" type="Tank" front="30" arc="8.5" side="20"/>
+	<vehicle name="germany_G52_Pz38_NA" type="Tank" front="50" arc="18" side="25"/>
+	<vehicle name="germany_B_1bis_captured" type="Tank" front="60" arc="30" side="60"/>
+	<vehicle name="germany_DW_II" type="Tank" front="50" arc="50" side="50"/>
+	<vehicle name="germany_G86_VK2001DB" type="Tank" front="50" arc="20" side="40"/>
+	<vehicle name="germany_PzIII_AusfJ" type="Tank" front="50" arc="15" side="30"/>
+	<vehicle name="germany_G25_PzII_Luchs" type="Tank" front="30" arc="10" side="20"/>
+	<vehicle name="germany_Hetzer" type="TD" rightArc="15" leftArc="5" front="60" arc="55" side="20"/>
+	<vehicle name="germany_G39_Marder_III" type="TD" rightArc="28" leftArc="28" front="50" arc="2.5" side="15"/>
+	<vehicle name="germany_G101_StuG_III" type="TD" rightArc="12" leftArc="12" front="50" arc="9" side="30"/>
+	<!-- T5 -->
+	<vehicle name="germany_G05_StuG_40_AusfG" type="TD" rightArc="10" leftArc="10" front="80" arc="8.5" side="30"/>
+	<vehicle name="germany_G05_StuG_40_AusfG_IGR" type="TD" rightArc="10" leftArc="10" front="80" arc="8.5" side="30"/>
+	<vehicle name="germany_Pz_IV_AusfH" type="Tank" front="80" arc="8.5" side="35"/>
+	<vehicle name="germany_G107_PzKpfwIII_AusfK" type="Tank" front="50" arc="10" side="30"/>
+	<vehicle name="germany_PzIV" type="Tank" front="80" arc="10" side="30"/>
+	<vehicle name="germany_PzIV_Hydro" type="Tank" front="50" arc="10" side="30"/>
+	<vehicle name="germany_G46_T_25" type="Tank" front="50" arc="45" side="45"/>
+	<vehicle name="germany_PzIII_IV" type="Tank" front="60" arc="40" side="60"/>
+	<vehicle name="germany_G104_Stug_IV" type="TD" rightArc="10" leftArc="10" front="80" arc="0" side="30"/>
+	<vehicle name="germany_Pz_Sfl_IVc" type="Tank" front="12" arc="10" side="10"/>
+	<vehicle name="germany_G26_VK1602" type="Tank" front="50" arc="48" side="30"/>
+	<vehicle name="germany_G13_VK3001H" type="Tank" front="50" arc="8.5" side="50"/>
+	<!-- T6 -->
+	<vehicle name="germany_VK3002DB_V1" type="Tank" front="60" arc="55" side="40"/>
+	<vehicle name="germany_VK2801" type="Tank" front="50" arc="55" side="30"/>
+	<vehicle name="germany_G15_VK3601H" type="Tank" front="100" arc="10" side="60"/>
+	<vehicle name="germany_G27_VK3001P" type="Tank" front="75" arc="10" side="60"/>
+	<vehicle name="germany_PzV_PzIV" type="Tank" front="85" arc="55" side="50"/>
+	<vehicle name="germany_PzV_PzIV_ausf_Alfa" type="Tank" front="85" arc="55" side="50"/>
+	<vehicle name="germany_PzIV_schmalturm" type="Tank" front="80" arc="7.5"  side="30"/>
+	<vehicle name="germany_DickerMax" type="TD" rightArc="8" leftArc="8" front="50" arc="10" side="20"/>
+	<vehicle name="germany_G17_JagdPzIV" type="TD" rightArc="15" leftArc="12" front="80" arc="50" side="40"/>
+	<vehicle name="germany_G40_Nashorn" type="TD" rightArc="15" leftArc="15" front="30" arc="17.5" side="10"/>
+	<vehicle name="germany_VK3002M" type="Tank" front="60" arc="53" side="40"/>
+	<!-- T7 -->
+	<vehicle name="germany_Auf_Panther" type="Tank" front="85" arc="55" side="50"/>
+	<vehicle name="germany_G106_PzKpfwPanther_AusfF" type="Tank" front="85" arc="55" side="50"/>
+	<vehicle name="germany_VK3002DB" type="Tank" front="80" arc="60" side="45"/>
+	<vehicle name="germany_PzVI" type="Tank" front="100" arc="10" side="80"/>
+	<vehicle name="germany_PzVI_IGR" type="Tank" front="100" arc="10" side="80"/>
+	<vehicle name="germany_PzVI_Tiger_P" type="Tank" front="200" arc="10" side="80"/>
+	<vehicle name="germany_PzV" type="Tank" front="85" arc="55" side="50"/>
+	<vehicle name="germany_PzV_IGR" type="Tank" front="85" arc="55" side="50"/>
+	<vehicle name="germany_G78_Panther_M10" type="Tank" front="85" arc="55" side="50"/>
+	<vehicle name="germany_JagdPanther" type="TD" rightArc="13" leftArc="13" front="80" arc="55" side="50"/>
+	<vehicle name="germany_Sturer_Emil" type="Tank" front="50" arc="10" side="20"/>
+	<vehicle name="germany_G109_Steyr_WT" type="Tank" front="15" arc="44.5" side="10"/>
+	<vehicle name="germany_G48_E_25" type="TD" rightArc="12" leftArc="12" front="50" arc="50" side="30"/>
+	<vehicle name="germany_G48_E_25_IGR" type="TD" rightArc="12" leftArc="12" front="50" arc="50" side="30"/>
+	<!-- T8 -->
+	<vehicle name="germany_G103_RU_251" type="Tank" front="25" arc="8" side="20"/>
+	<vehicle name="germany_G16_PzVIB_Tiger_II" type="Tank" front="150" arc="50" side="80"/>
+	<vehicle name="germany_G16_PzVIB_Tiger_II_IGR" type="Tank" front="150" arc="50" side="80"/>
+	<vehicle name="germany_VK4502A" type="Tank" front="120" arc="55" side="80"/>
+	<vehicle name="germany_Lowe" type="Tank" front="120" arc="55" side="100"/>
+	<vehicle name="germany_Panther_II" type="Tank" front="100" arc="55" side="60"/>
+	<vehicle name="germany_Panther_II_IGR" type="Tank" front="100" arc="55" side="60"/>
+	<vehicle name="germany_Indien_Panzer" type="Tank" front="90" arc="57" side="60"/>
+	<vehicle name="germany_G71_JagdPantherII" type="TD" rightArc="10" leftArc="10" front="100" arc="55" side="60"/>
+	<vehicle name="germany_Ferdinand" type="TD" rightArc="15" leftArc="15" front="200" arc="10" side="80"/>
+	<vehicle name="germany_Ferdinand_IGR" type="TD" rightArc="15" leftArc="15" front="200" arc="10" side="80"/>
+	<vehicle name="germany_JagdTiger_SdKfz_185" type="TD" rightArc="10" leftArc="10" front="150" arc="50" side="80"/>
+	<vehicle name="germany_JagdTiger_SdKfz_185_IGR" type="TD" rightArc="10" leftArc="10" front="150" arc="50" side="80"/>
+	<vehicle name="germany_RhB_Waffentrager" type="Tank" front="20" arc="62" side="10"/>
+	<vehicle name="germany_G112_KanonenJagdPanzer" type="TD" rightArc="15" leftArc="15" front="30" arc="48" side="30"/>
+	<!-- T9 -->
+	<vehicle name="germany_E_75" type="Tank" front="130" arc="60" side="120"/>
+	<vehicle name="germany_VK4502P" type="Tank" front="150" arc="50" side="100"/>
+	<vehicle name="germany_G58_VK4502P" type="Tank" front="150" arc="50" side="100"/>
+	<vehicle name="germany_E_50" type="Tank" front="150" arc="62" side="80"/>
+	<vehicle name="germany_G91_Pro_Ag_A" type="Tank" front="70" arc="60" side="35"/>
+	<vehicle name="germany_G44_JagdTiger" type="TD" rightArc="10" leftArc="10" front="150" arc="52" side="80"/>
+	<vehicle name="germany_Waffentrager_IV" type="Tank" front="80" arc="5" side="30"/>
+	<vehicle name="germany_G105_T_55_NVA_DDR" type="Tank" front="100" arc="60.7" side="80"/>
+	<!-- T10 -->
+	<vehicle name="germany_E_100" type="Tank" front="150" arc="50" side="180"/>
+	<vehicle name="germany_Maus" type="Tank" front="200" arc="42" side="185"/>
+	<vehicle name="germany_Maus_IGR" type="Tank" front="200" arc="42" side="185"/>
+	<vehicle name="germany_G89_Leopard1" type="Tank" front="70" arc="60" side="35"/>
+	<vehicle name="germany_E50_Ausf_M" type="Tank" front="150" arc="62" side="80"/>
+	<vehicle name="germany_JagdPz_E100" type="Tank" front="150" arc="50" side="150"/>
+	<vehicle name="germany_G92_VK7201" type="Tank" front="200" arc="30" side="160"/>
+	<vehicle name="germany_Waffentrager_E100" type="Tank" front="200" arc="62" side="10"/>
+	
+	<!-- JAPAN -->
+	<!-- T1 -->
+	<vehicle name="japan_NC27" type="Tank" front="30" arc="20.5" side="20"/>
+	<!-- T2 -->
+	<vehicle name="japan_J15_Chi_Ni" type="Tank" front="25" arc="25" side="10"/>
+	<vehicle name="japan_J03_Ha_Go" type="Tank" front="12" arc="13" side="10"/>
+	<vehicle name="japan_Te_Ke" type="Tank" front="12" arc="22" arc3="17.5" side="10"/>
+	<!-- T3 -->
+	<vehicle name="japan_J07_Chi_Ha" type="Tank" front="25" arc="8.5" arc3="17.5" side="20"/>
+	<vehicle name="japan_J04_Ke_Ni" type="Tank" front="16" arc="29" side="12"/>
+	<vehicle name="japan_Ke_Ni_B" type="Tank" front="16" arc="29" side="12"/>
+	<!-- T4 -->
+	<vehicle name="japan_J09_Chi_He" type="Tank" front="50" arc="21" side="20"/>
+	<vehicle name="japan_J06_Ke_Ho" type="Tank" front="20" arc="28" side="16"/>
+	<!-- T5 -->
+	<vehicle name="japan_J08_Chi_Nu" type="Tank" front="50" arc="16" side="20"/>
+	<vehicle name="japan_J12_Chi_Nu_Kai" type="Tank" front="50" arc="16" side="20"/>
+	<!-- T6 -->
+	<vehicle name="japan_Chi_To" type="Tank" front="75" arc="32" side="35"/>
+	<vehicle name="japan_J19_Tiger_I_Jpn" type="Tank" front="100" arc="8.5" side="80"/>
+	<!-- T7 -->
+	<vehicle name="japan_Chi_Ri" type="Tank" front="75" arc="16" side="35"/>
+	<vehicle name="japan_Chi_Ri_IGR" type="Tank" front="75" arc="16" side="35"/>
+	<!-- T8 -->
+	<vehicle name="japan_STA_1" type="Tank" front="45" arc="60" side="30"/>
+	<vehicle name="japan_STA_1_IGR" type="Tank" front="45" arc="60" side="30"/>
+	<vehicle name="japan_J18_STA_2_3" type="Tank" front="45" arc="59" side="35"/>
+	<!-- T9 -->
+	<vehicle name="japan_Type_61" type="Tank" front="55" arc="58" side="30"/>
+	<!-- T10 -->
+	<vehicle name="japan_ST_B1" type="Tank" front="80" arc="62" side="35"/>
+	<vehicle name="japan_ST_B1_IGR" type="Tank" front="80" arc="62" side="35"/>
+	
+	<!-- UK -->
+	<!-- ARTY -->
+	<vehicle name="uk_GB26_Birch_Gun" type="SPG" rightArc="180" leftArc="180"/>
+	<vehicle name="uk_GB25_Loyd_Carrier" type="SPG" rightArc="15" leftArc="30"/>
+	<vehicle name="uk_GB27_Sexton" type="SPG" rightArc="15" leftArc="25"/>
+	<vehicle name="uk_GB78_Sexton_I" type="SPG" rightArc="15" leftArc="25"/>
+	<vehicle name="uk_GB28_Bishop" type="SPG" rightArc="4" leftArc="4"/>
+	<vehicle name="uk_GB77_FV304" type="SPG" rightArc="17" leftArc="14"/>
+	<vehicle name="uk_GB77_FV304_IGR" type="SPG" rightArc="17" leftArc="14"/>
+	<vehicle name="uk_GB29_Crusader_5inch" type="SPG" rightArc="23" leftArc="17"/>
+	<vehicle name="uk_GB79_FV206" type="SPG" rightArc="22" leftArc="22"/>
+	<vehicle name="uk_GB30_FV3805" type="SPG" rightArc="25" leftArc="25"/>
+	<vehicle name="uk_GB31_Conqueror_Gun" type="SPG" rightArc="30" leftArc="30"/>
+	<!-- T1 -->
+	<vehicle name="uk_GB01_Medium_Mark_I" type="Tank" front="6.3" arc="8.5" side="6.3"/>
+	<!-- T2 -->
+	<vehicle name="uk_GB14_M2" type="Tank" front="25.4" arc="18.5" side="25.4"/>
+	<vehicle name="uk_GB05_Vickers_Medium_Mk_II" type="Tank" front="8" arc="0" side="8"/>
+	<vehicle name="uk_GB03_Cruiser_Mk_I" type="Tank" front="14" arc="0" side="10"/>
+	<vehicle name="uk_GB58_Cruiser_Mk_III" type="Tank" front="14" arc="0" side="14"/>
+	<vehicle name="uk_GB39_Universal_CarrierQF2" type="TD" rightArc="22" leftArc="22" front="10" arc="0" side="7"/>
+	<vehicle name="uk_GB76_Mk_VIC" type="Tank" front="14" arc="0" side="13"/>
+	<!-- T3 -->
+	<vehicle name="uk_GB15_Stuart_I" type="Tank" front="38.1" arc="18.5" side="25.4"/>
+	<vehicle name="uk_GB06_Vickers_Medium_Mk_III" type="Tank" front="14" arc="9" side="9"/>
+	<vehicle name="uk_GB69_Cruiser_Mk_II" type="Tank" front="30" arc="0" side="22"/>
+	<vehicle name="uk_GB59_Cruiser_Mk_IV" type="Tank" front="20" arc="0" side="14"/>
+	<vehicle name="uk_GB42_Valentine_AT" type="TD" rightArc="15" leftArc="15" front="14" arc="22.5" side="14"/>
+	<!-- T4 -->
+	<vehicle name="uk_GB07_Matilda" type="Tank" front="75" arc="0" side="70"/>
+	<vehicle name="uk_GB04_Valentine" type="Tank" front="60" arc="0" side="60"/>
+	<vehicle name="uk_GB60_Covenanter" type="Tank" front="40" arc="0" side="30"/>
+	<vehicle name="uk_GB57_Alecto" type="TD" rightArc="15" leftArc="15" front="6" arc="34.5" side="4"/>
+	<vehicle name="uk_GB17_Grant_I" type="TD" rightArc="15" leftArc="15" front="51" arc="30" side="38"/>
+	<!-- T5 -->
+	<vehicle name="uk_GB50_Sherman_III" type="Tank" front="50.8" arc="57.5" side="30.1"/>
+	<vehicle name="uk_GB20_Crusader" type="Tank" front="32" arc="64" side="27"/>
+	<vehicle name="uk_GB08_Churchill_I" type="Tank" front="76" arc="15" side="64"/>
+	<vehicle name="uk_GB08_Churchill_I_IGR" type="Tank" front="76" arc="15" side="64"/>
+	<vehicle name="uk_GB44_Archer" type="TD" rightArc="22.5" leftArc="22.5" front="14" arc="59" side="20"/>
+	<vehicle name="uk_GB73_AT2" type="TD" rightArc="13" leftArc="13" front="203.2" arc="9" side="101.6"/>
+	<vehicle name="uk_GB68_Matilda_Black_Prince" type="Tank" front="75" arc="4" side="70"/>
+	<vehicle name="uk_GB51_Excelsior" type="Tank" front="114.3" arc="0" side="57.2"/>
+	<!-- T6 -->
+	<vehicle name="uk_GB45_Achilles_IIC" type="Tank" front="38.1" arc="55" side="19.1"/>
+	<vehicle name="uk_GB19_Sherman_Firefly" type="Tank" front="50.8" arc="47.2" side="38.1"/>
+	<vehicle name="uk_GB21_Cromwell" type="Tank" front="63.5" arc="0" side="42.9"/>
+	<vehicle name="uk_GB85_Cromwell_Berlin" type="Tank" front="63.5" arc="0" side="42.9"/>
+	<vehicle name="uk_GB21_Cromwell_IGR" type="Tank" front="63.5" arc="0" side="42.9"/>
+	<vehicle name="uk_GB09_Churchill_VII" type="Tank" front="139" arc="17.5" side="95.3"/>
+	<vehicle name="uk_GB74_AT8" type="TD" rightArc="7.5" leftArc="7.5" front="76.2" arc="10.5" side="50.8"/>
+	<vehicle name="uk_GB40_Gun_Carrier_Churchill" type="TD" rightArc="5" leftArc="5" front="88.9" arc="3" side="63.5"/>
+	<vehicle name="uk_GB63_TOG_II" type="Tank" front="76.2" arc="0" side="63.5"/>
+	<!-- T7 -->
+	<vehicle name="uk_GB52_A45" type="Tank" front="76.2" arc="59.5" side="56.8"/>
+	<vehicle name="uk_GB41_Challenger" type="Tank" front="63.5" arc="0" side="28.3"/>
+	<vehicle name="uk_GB10_Black_Prince" type="Tank" front="139" arc="20" side="82"/>
+	<vehicle name="uk_GB22_Comet" type="Tank" front="76" arc="0" side="32"/>
+	<vehicle name="uk_GB75_AT7" type="TD" rightArc="7.5" leftArc="7.5" front="203" arc="0" side="102"/>
+	<vehicle name="uk_GB71_AT_15A" type="TD" rightArc="25" leftArc="25" front="228.6" arc="4" side="152.4"/>
+	<!-- T8 -->
+	<vehicle name="uk_GB70_N_FV4202_105" type="Tank" front="50.8" arc="70" side="56.8"/>
+	<vehicle name="uk_GB11_Caernarvon" type="Tank" front="130" arc="64" side="51"/>
+	<vehicle name="uk_GB11_Caernarvon_IGR" type="Tank" front="130" arc="64" side="51"/>
+	<vehicle name="uk_GB23_Centurion" type="Tank" front="76" arc="55" side="51"/>
+	<vehicle name="uk_GB23_Centurion_IGR" type="Tank" front="76" arc="55" side="51"/>
+	<vehicle name="uk_GB72_AT15" type="TD" rightArc="25" leftArc="25" front="127" arc="64" side="152"/>
+	<vehicle name="uk_GB80_Charioteer" type="Tank" front="63.5" arc="0" side="46"/>
+	<vehicle name="uk_GB72_AT15_IGR" type="TD" rightArc="25" leftArc="25" front="127" arc="64" side="152"/>
+	<!-- T9 -->
+	<vehicle name="uk_GB12_Conqueror" type="Tank" front="76" arc="47" side="57"/>
+	<vehicle name="uk_GB24_Centurion_Mk3" type="Tank" front="76.2" arc="44" side="57"/>
+	<vehicle name="uk_GB32_Tortoise" type="TD" rightArc="20" leftArc="20" front="171.5" arc="42" side="152.4"/>
+	<vehicle name="uk_GB81_FV4004" type="Tank" front="76.2" arc="61.5" side="50.8"/>
+	<!-- T10 -->
+	<vehicle name="uk_GB13_FV215b" type="Tank" front="152.4" arc="60" side="56.8"/>
+	<vehicle name="uk_GB13_FV215b_IGR" type="Tank" front="152.4" arc="60" side="56.8"/>
+	<vehicle name="uk_GB70_FV4202_105" type="Tank" front="76" arc="47" side="57"/>
+	<vehicle name="uk_GB83_FV4005" type="Tank" front="76.2" arc="61.5" side="56.8"/>
+	<vehicle name="uk_GB48_FV215b_183" type="TD" rightArc="45" leftArc="45" front="76.2" arc="44" side="56.8"/>
+	
+	<!-- USA -->
+	<!-- ARTY -->
+	<vehicle name="usa_A18_M41" type="SPG" rightArc="17" leftArc="21"/>
+	<vehicle name="usa_A87_M44" type="SPG" rightArc="30" leftArc="30"/>
+	<vehicle name="usa_A88_M53_55" type="SPG" rightArc="30" leftArc="30"/>
+	<vehicle name="usa_T57" type="SPG" rightArc="15" leftArc="15"/>
+	<vehicle name="usa_A16_M7_Priest" type="SPG" rightArc="26" leftArc="12"/>
+	<vehicle name="usa_Sexton_I" type="SPG" rightArc="15" leftArc="25"/>
+	<vehicle name="usa_M37" type="SPG" rightArc="26" leftArc="26"/>
+	<vehicle name="usa_M12" type="SPG" rightArc="14" leftArc="14"/>
+	<vehicle name="usa_M40M43" type="SPG" rightArc="18" leftArc="18"/>
+	<vehicle name="usa_T92" type="SPG" rightArc="12" leftArc="12"/>
+	<!-- T1 -->
+	<vehicle name="usa_A01_T1_Cunningham" type="Tank" front="10" arc="0" side="10"/>
+	<!-- T2 -->
+	<vehicle name="usa_A24_T2_med" type="Tank" front="22" arc="16" side="22"/>
+	<vehicle name="usa_T7_Combat_Car" type="Tank" front="15.9" arc="17.5" side="12.7"/>
+	<vehicle name="usa_T2_lt" type="Tank" front="17" arc="21" side="15"/>
+	<vehicle name="usa_T1_E6" type="Tank" front="15.9" arc="15" side="6.4"/>
+	<vehicle name="usa_A02_M2_lt" type="Tank" front="25" arc="18" side="25"/>
+	<vehicle name="usa_T18" type="TD" rightArc="15" leftArc="15" front="16" arc="58" side="32"/>
+	<!-- T3 -->
+	<vehicle name="usa_M22_Locust" type="Tank" front="25" arc="13" side="13"/>
+	<vehicle name="usa_A25_M2_med" type="Tank" front="22" arc="0" side="22"/>
+	<vehicle name="usa_A03_M3_Stuart" type="Tank" front="35" arc="17.5" side="25"/>
+	<vehicle name="usa_MTLS_1G14" type="Tank" front="38.1" arc="0" side="25.4"/>
+	<vehicle name="usa_A27_T82" type="TD" rightArc="22" leftArc="17" front="13" arc="24" side="7"/>
+	<!-- T4 -->
+	<vehicle name="usa_M3_Grant" type="TD" rightArc="15" leftArc="15" front="51" arc="30" side="38"/>
+	<vehicle name="usa_A29_T40" type="TD" rightArc="35" leftArc="22" front="19" arc="13.5" side="38"/>
+	<vehicle name="usa_M5_Stuart" type="Tank" front="28.6" arc="48.5" side="28.6"/>
+	<vehicle name="usa_M8A1" type="Tank" front="29" arc="46" side="29"/>
+	<!-- T5 -->
+	<vehicle name="usa_A58_T67" type="Tank" front="21.8" arc="55" side="19"/>
+	<vehicle name="usa_A58_T67_IGR" type="Tank" front="21.8" arc="55" side="19"/>
+	<vehicle name="usa_A30_M10_Wolverine" type="Tank" front="51" arc="54" side="19"/>
+	<vehicle name="usa_A09_T1_hvy" type="Tank" front="83" arc="20" side="44"/>
+	<vehicle name="usa_T14" type="Tank" front="50.8" arc="62" side="50.8"/>
+	<vehicle name="usa_Ram_II" type="Tank" front="76.2" arc="50" side="63"/>
+	<vehicle name="usa_M4A2E4" type="Tank" front="64" arc="56" side="38"/>
+	<vehicle name="usa_A05_M4_Sherman" type="Tank" front="51" arc="56" side="38"/>
+	<vehicle name="usa_A05_M4_Sherman_IGR" type="Tank" front="51" arc="56" side="38"/>
+	<vehicle name="usa_A78_M4_Improved" type="Tank" front="50.8" arc="56" side="44.5"/>
+	<vehicle name="usa_A23_M7_med" type="Tank" front="38" arc="56" side="32"/>
+	<vehicle name="usa_M24_Chaffee" type="Tank" front="22" arc="58" side="22"/>
+	<!-- T6 -->
+	<vehicle name="usa_A94_T37" type="Tank" front="25" arc="19" side="25"/>
+	<vehicle name="usa_M36_Slagger" type="Tank" front="60" arc="55" side="25"/>
+	<vehicle name="usa_M18_Hellcat" type="Tank" front="13" arc="50" side="13"/>
+	<vehicle name="usa_M6" type="Tank" front="83" arc="20" side="44"/>
+	<vehicle name="usa_M4A3E8_Sherman" type="Tank" front="64" arc="56" side="38"/>
+	<vehicle name="usa_A104_M4A3E8A" type="Tank" front="63.5" arc="47" side="38.1"/>
+	<vehicle name="usa_A36_Sherman_Jumbo" type="Tank" front="102" arc="56" side="76"/>
+	<vehicle name="usa_A36_Sherman_Jumbo_IGR" type="Tank" front="102" arc="56" side="76"/>
+	<vehicle name="usa_T21" type="Tank" front="28.6" arc="48" side="25"/>
+	<!-- T7 -->
+	<vehicle name="usa_A85_T110E3" type="Tank" front="76.2" arc="46.5" side="50.8"/>
+	<vehicle name="usa_M41_Bulldog" type="Tank" front="25" arc="19" side="25"/>
+	<vehicle name="usa_A11_T29" type="Tank" front="88" arc="54" side="76"/>
+	<vehicle name="usa_A11_T29_IGR" type="Tank" front="88" arc="54" side="76"/>
+	<vehicle name="usa_A101_M56" type="TD" rightArc="30" leftArc="30" front="1" arc="63" side="1"/>
+	<vehicle name="usa_T25_AT" type="TD" rightArc="10" leftArc="10" front="88.9" arc="46" side="63.5"/>
+	<vehicle name="usa_A07_T20" type="Tank" front="64" arc="46" side="51"/>
+	<vehicle name="usa_T25_2" type="Tank" front="76" arc="46" side="51"/>
+	<vehicle name="usa_T71" type="Tank" front="25.4" arc="54" side="22"/>
+	<vehicle name="usa_T71_IGR" type="Tank" front="25.4" arc="54" side="22"/>
+	<vehicle name="usa_A102_T28_concept" type="TD" rightArc="29" leftArc="29" front="203.2" side="101.6"/>
+	<!-- T8 -->
+	<vehicle name="usa_T49" type="Tank" front="25" arc="19" side="25"/>
+	<vehicle name="usa_A13_T34_hvy" type="Tank" front="102" arc="52.5" side="76"/>
+	<vehicle name="usa_A13_T34_hvy_IGR" type="Tank" front="102" arc="52.5" side="76"/>
+	<vehicle name="usa_A45_M6A2E1" type="Tank" front="191" arc="20" side="44"/>
+	<vehicle name="usa_A80_T26_E4_SuperPershing" front="190" arc="52" side="76"/>
+	<vehicle name="usa_A35_Pershing" type="Tank" front="102" arc="52" side="76"/>
+	<vehicle name="usa_A35_Pershing_IGR" type="Tank" front="102" arc="52" side="76"/>
+	<vehicle name="usa_A12_T32" type="Tank" front="127" arc="54" side="76"/>
+	<vehicle name="usa_T28" type="TD" rightArc="11" leftArc="10" arc="30" front="203.2" side="50.8"/>
+	<vehicle name="usa_A68_T28_Prototype" type="Tank" rightArc="143" leftArc="143" front="203.2" arc="30" side="50.8"/>
+	<vehicle name="usa_T69" type="Tank" front="101.6" arc="55" side="70"/>
+	<vehicle name="usa_T69_IGR" type="Tank" front="101.6" arc="55" side="70"/>
+	<vehicle name="usa_T23" type="Tank" front="76" arc="55" side="51"/>
+	<vehicle name="usa_T95_E2" type="Tank" front="109.6" arc="37.5" side="63.5"/>
+	<!-- T9 -->
+	<vehicle name="usa_A89_T54E1" type="Tank" front="101.6" arc="48.5" arc3="25" side="63.5"/>
+	<vehicle name="usa_A63_M46_Patton" type="Tank" front="102" arc="52" side="76"/>
+	<vehicle name="usa_M103" type="Tank" front="114" arc="53.5" arc3="22" side="51"/>
+	<vehicle name="usa_T95" type="TD" rightArc="11" leftArc="10" front="305" arc="10" side="152"/>
+	<vehicle name="usa_A14_T30" type="Tank" front="102" arc="52" side="63"/>
+	<!-- T10 -->
+	<vehicle name="usa_A84_M48A1" type="Tank" front="101.6" arc="38" arc3="22" side="76.2"/>
+	<vehicle name="usa_A84_M48A1_IGR" type="Tank" front="101.6" arc="38" arc3="22" side="76.2"/>
+	<vehicle name="usa_T110" type="Tank" front="140" arc="70" arc3="20" side="76"/>
+	<vehicle name="usa_T110_fallout" type="Tank" front="140" arc="70" arc3="20" side="76"/>
+	<vehicle name="usa_T57_58" type="Tank" front="114" arc="50" arc3="16" side="51"/>
+	<vehicle name="usa_A83_T110E4" type="Tank" rightArc="90" leftArc="90" front="140" arc="60" arc3="22" side="96"/>
+	<vehicle name="usa_A85_T110E3" type="TD" rightArc="8" leftArc="8" front="152" arc="52" arc3="22" side="96"/>
+	<vehicle name="usa_A92_M60" type="Tank" front="93.2" arc="52" side="35.8"/>
+	<vehicle name="usa_A95_T95_E6" type="Tank" front="101.6" arc="37.5" side="61.4"/>
+	
+	<!-- USSR -->
+	<!-- ARTY -->
+	<vehicle name="ussr_SU_8" type="SPG" rightArc="12" leftArc="5"/>
+	<vehicle name="ussr_S_51" type="SPG" rightArc="4" leftArc="4"/>
+	<vehicle name="ussr_SU_14" type="SPG" rightArc="4" leftArc="4"/>
+	<vehicle name="ussr_SU14_1" type="SPG" rightArc="4" leftArc="4"/>
+	<vehicle name="ussr_R16_SU_18" type="SPG" rightArc="3" leftArc="3"/>
+	<vehicle name="ussr_SU_26" type="SPG" rightArc="180" leftArc="180"/>
+	<vehicle name="ussr_SU_5" type="SPG" rightArc="6" leftArc="6"/>
+	<vehicle name="ussr_R100_SU122A" type="SPG" rightArc="7.5" leftArc="7.5"/>
+	<vehicle name="ussr_R51_Object_212" type="SPG" rightArc="4" leftArc="4"/>
+	<vehicle name="ussr_Object_261" type="SPG" rightArc="5" leftArc="5"/>
+	<!-- T1 -->
+	<vehicle name="ussr_R11_MS_1" type="Tank" front="18" arc="14" side="16"/>
+	<!-- T2 -->
+	<vehicle name="ussr_AT_1" type="TD" rightArc="11" leftArc="11" front="16" arc="0" side="15"/>
+	<vehicle name="ussr_BT_2" type="Tank" front="13" arc="64" side="13"/>
+	<vehicle name="ussr_T_26" type="Tank" front="15" arc="0" side="15"/>
+	<vehicle name="ussr_T_60" type="Tank" front="35" arc="23" side="15"/>
+	<vehicle name="ussr_Tetrarch_LL" type="Tank" front="14" arc="12" side="14"/>
+	<!-- T3 -->
+	<vehicle name="ussr_R22_T_46" type="Tank" front="22" arc="12.5" side="15"/>
+	<vehicle name="ussr_M3_Stuart_LL" type="Tank" front="36.5" arc="17.5" side="25"/>
+	<vehicle name="ussr_BT_SV" type="Tank" front="25" arc="23.5" arc2="70.5" side="20"/>
+	<vehicle name="ussr_R03_BT_7" type="Tank" front="20" arc="64" side="15"/>
+	<vehicle name="ussr_R105_BT_7A" type="Tank" front="20" arc="64" side="19"/>
+	<vehicle name="ussr_R86_LTP" type="Tank" front="30" arc="54" side="20"/>
+	<vehicle name="ussr_T_70" type="Tank" front="35" arc="58" side="15"/>
+	<vehicle name="ussr_R56_T_127" type="Tank" front="40" arc="50" side="30"/>
+	<vehicle name="ussr_R25_GAZ_74b" type="TD" rightArc="11" leftArc="11" front="25" arc="26.5" side="15"/>
+	<vehicle name="ussr_SU76I" type="TD" rightArc="10" leftArc="10" front="57.5" arc="10" side="30"/>
+	<!-- T4 -->
+	<vehicle name="ussr_T_50" type="Tank" front="37" arc="49" side="37"/>
+	<vehicle name="ussr_R06_T_28" type="Tank" front="30" arc="20.5" side="20"/>
+	<vehicle name="ussr_Valentine_LL" type="Tank" front="60" arc="0" side="60"/>
+	<vehicle name="ussr_Valentine_LL_IGR" type="Tank" front="60" arc="0" side="60"/>
+	<vehicle name="ussr_R44_T80" type="Tank" front="35" arc="58" side="25"/>
+	<vehicle name="ussr_R12_A_20" type="Tank" front="20" arc="55.5" side="20"/>
+	<vehicle name="ussr_A_32" type="Tank" front="35" arc="55.5" side="30"/>
+	<vehicle name="ussr_R24_SU_76" type="TD" rightArc="11" leftArc="11" front="25" arc="27" side="10"/>
+	<!-- T5 -->
+	<vehicle name="ussr_Matilda_II_LL" type="Tank" front="75" arc="0" side="70"/>
+	<vehicle name="ussr_Churchill_LL" type="Tank" front="88" arc="0" side="76.2"/>
+	<vehicle name="ussr_R80_KV1" type="Tank" front="75" arc="30" side="75"/>
+	<vehicle name="ussr_R04_T_34" type="Tank" front="45" arc="60" side="40"/>
+	<vehicle name="ussr_R02_SU_85" type="TD" rightArc="15" leftArc="15" front="45" arc="50" side="45"/>
+	<vehicle name="ussr_T_50_2" type="Tank" front="37" arc="50" side="37"/>
+	<vehicle name="ussr_R38_KV_220" type="Tank" front="100" arc="31" side="100"/>
+	<vehicle name="ussr_R38_KV_220_action" type="Tank" front="100" arc="31" side="100"/>
+	<vehicle name="ussr_KV" type="Tank" front="75" arc="26" side="75"/>
+	<vehicle name="ussr_KV_1s" type="Tank" front="75" arc="29" side="60"/>
+	<vehicle name="ussr_SU_85I" type="TD" rightArc="10" leftArc="10" front="57.5" arc="10" side="30"/>
+	<!-- T6 -->
+	<vehicle name="ussr_A43" type="Tank" front="60" arc="52" side="45"/>
+	<vehicle name="ussr_KV2" type="Tank" front="75" arc="25" side="75"/>
+	<vehicle name="ussr_KV2_IGR" type="Tank" front="75" arc="25" side="75"/>
+	<vehicle name="ussr_R106_KV85" type="Tank" front="75" arc="60" side="60"/>
+	<vehicle name="ussr_R106_KV85_IGR" type="Tank" front="75" arc="60" side="60"/>
+	<vehicle name="ussr_T150" type="Tank" front="90" arc="25" side="90"/>
+	<vehicle name="ussr_R07_T_34_85" type="Tank" front="45" arc="60" side="45"/>
+	<vehicle name="ussr_R117_T34_85_Rudy" type="Tank" front="45" arc="60" side="45"/>
+	<vehicle name="ussr_R108_T34_85M" type="Tank" front="75" arc="60" side="45"/>
+	<vehicle name="ussr_R114_Object_244" type="Tank" front="100" arc="30" side="95"/>
+	<vehicle name="ussr_SU100Y" type="TD" rightArc="10" leftArc="10" front="60" arc="43" side="60"/>
+	<vehicle name="ussr_R17_SU_100" type="TD" rightArc="12" leftArc="12" front="75" arc="50" side="45"/>
+	<vehicle name="ussr_MT25" type="Tank" front="40" arc="25" side="40"/>
+	<!-- T7 -->
+	<vehicle name="ussr_R107_LTB" type="Tank" front="90" arc="40" side="45"/>
+	<vehicle name="ussr_KV_3" type="Tank" front="120" arc="30" side="90"/>
+	<vehicle name="ussr_R01_IS" type="Tank" front="100" arc="25" side="90"/>
+	<vehicle name="ussr_R23_T_43" type="Tank" front="75" arc="50" side="75"/>
+	<vehicle name="ussr_KV_13" type="Tank" front="100" arc="37" side="85"/>
+	<vehicle name="ussr_SU100M1" type="TD" rightArc="8" leftArc="8" front="90" arc="55" side="75"/>
+	<vehicle name="ussr_SU122_44" type="TD" rightArc="8" leftArc="8" front="90" arc="60" side="75"/>
+	<vehicle name="ussr_R18_SU_152" type="TD" rightArc="8" leftArc="8" front="60" arc="25" side="60"/>
+	<vehicle name="ussr_R18_SU_152_IGR" type="TD" rightArc="8" leftArc="8" front="60" arc="25" side="60"/>
+	<vehicle name="ussr_A44" type="Tank" front="75" arc="64" side="60"/>
+	<vehicle name="ussr_T44_122" type="Tank" front="75" arc="58" side="75"/>
+	<vehicle name="ussr_T44_85" type="Tank" front="75" arc="58" side="75"/>
+	<vehicle name="ussr_R116_ISU122C_Berlin" type="TD" rightArc="8" leftArc="8" front="90" arc="30" side="75"/>
+	<vehicle name="ussr_R71_IS_2B" type="Tank" front="100" arc="35" side="90"/>
+	<!-- T8 -->
+	<vehicle name="ussr_R109_T54S" type="Tank" front="80" arc="45" side="60"/>
+	<vehicle name="ussr_R112_T54_45" type="Tank" front="120" arc="60" side="90"/>
+	<vehicle name="ussr_R113_Object_730" type="Tank" front="120" arc="63" arc2="35" side="48"/>
+	<vehicle name="ussr_R19_IS_3" type="Tank" front="110" arc="56" arc2="43" side="120"/>
+	<vehicle name="ussr_R19_IS_3_IGR" type="Tank" front="110" arc="56" arc2="43" side="120"/>
+	<vehicle name="ussr_R115_IS_3_auto" type="Tank" front="110" arc="60" arc2="54" side="90"/>
+	<vehicle name="ussr_KV4" type="Tank" front="160" arc="25" side="150"/>
+	<vehicle name="ussr_R54_KV_5" type="Tank" front="180" arc="30" side="150"/>
+	<vehicle name="ussr_R54_KV_5_IGR" type="Tank" front="180" arc="30" side="150"/>
+	<vehicle name="ussr_R61_Object252" type="Tank" front="100" arc="65" side="130"/>
+	<vehicle name="ussr_T_44" type="Tank" front="90" arc="60" side="75"/>
+	<vehicle name="ussr_T_44_IGR" type="Tank" front="90" arc="60" side="75"/>
+	<vehicle name="ussr_SU_101" type="TD" rightArc="7" leftArc="7" front="90" arc="64" side="76"/>
+	<vehicle name="ussr_R111_ISU130" type="TD" rightArc="10" leftArc="2" front="90" arc="30" side="75"/>
+	<vehicle name="ussr_ISU_152" type="TD" rightArc="8" leftArc="8" front="90" arc="30" side="75"/>
+	<vehicle name="ussr_ISU_152_IGR" type="TD" rightArc="8" leftArc="8" front="90" arc="30" side="75"/>
+	<vehicle name="ussr_Object416" type="TD" rightArc="75" leftArc="75" front="75" arc="56" side="45"/>
+	<!-- T9 -->
+	<vehicle name="ussr_R81_IS8" type="Tank" front="120" arc="55" arc2="40" side="80"/>
+	<vehicle name="ussr_ST_I" type="Tank" front="140" arc="61" side="140"/>
+	<vehicle name="ussr_T_54" type="Tank" front="120" arc="60" side="80"/>
+	<vehicle name="ussr_R53_Object_704" type="TD" rightArc="11" leftArc="11" front="120" arc="50" side="90"/>
+	<vehicle name="ussr_R75_SU122_54" type="TD" rightArc="8" leftArc="8" front="100" arc="50" side="80"/>
+	<vehicle name="ussr_R104_Object_430_II" type="TD" front="120" arc="58" side="80"/>
+	<!-- T10 -->
+	<vehicle name="ussr_R90_IS_4M" type="Tank" front="140" arc="61" side="160"/>
+	<vehicle name="ussr_IS_7" type="Tank" front="150" arc="60" arc2="37" side="150"/>
+	<vehicle name="ussr_IS_7_IGR" type="Tank" front="150" arc="60" arc2="37" side="150"/>
+	<vehicle name="ussr_R87_T62A" type="Tank" front="102" arc="60" side="75"/>
+	<vehicle name="ussr_Object268" type="TD" rightArc="6" leftArc="6" front="120" arc="56" arc2="43" side="90"/>
+	<vehicle name="ussr_Object263" type="TD" rightArc="7" leftArc="7" front="250" arc="45" side="80"/>
+	<vehicle name="ussr_Object_140" type="Tank" front="100" arc="65" side="57"/>
+	<vehicle name="ussr_Object_140_fallout" type="Tank" front="100" arc="65" side="57"/>
+	<vehicle name="ussr_R96_Object_430" type="Tank" front="120" arc="62" side="55"/>
+	<vehicle name="ussr_Object_907" type="Tank" front="100" arc="67" arc3="25" side="53.5"/>
+	<vehicle name="ussr_Object_907A" type="Tank" front="100" arc="67" arc3="25" side="53.5"/>
+	<vehicle name="ussr_R110_Object_260" type="Tank" front="150" arc="64" arc2="40" side="80"/>	
+	<!-- Tanks whose names were not found. Type, front, side, leftArc, rightArc pulled from files. -->
+	<!-- these tanks need Arc values, default 0 so Effective Armor is calculated with out armor slope -->
+	<vehicle name="france_F15_AMX_12t" type="Tank" rightArc="0" leftArc="0" front="0" arc="0" arc2="0" side="0"/>
+	<vehicle name="france_F28_105_leFH18B2" type="SPG" rightArc="-15" leftArc="15" front="0" arc="0" arc2="0" side="0"/>
+	<vehicle name="france_F28_105_leFH18B2_IGR" type="SPG" rightArc="-15" leftArc="15" front="0" arc="0" arc2="0" side="0"/>
+	<vehicle name="france_F65_FCM_50t" type="Tank" rightArc="0" leftArc="0" front="0" arc="0" arc2="0" side="0"/>
+	<vehicle name="france_F73_M4A1_Revalorise" type="Tank" rightArc="0" leftArc="0" front="0" arc="0" arc2="0" side="0"/>
+	<vehicle name="france_F74_AMX_M4_1949" type="Tank" rightArc="0" leftArc="0" front="0" arc="0" arc2="0" side="0"/>
+	<vehicle name="france_F75_Char_de_25t" type="Tank" rightArc="0" leftArc="0" front="0" arc="0" arc2="0" side="0"/>
+	<vehicle name="germany_Env_Artillery" type="SPG" rightArc="-15" leftArc="15" front="0" arc="0" arc2="0" side="0"/>
+	<vehicle name="germany_G04_PzVI_Tiger_IA" type="Tank" rightArc="0" leftArc="0" front="0" arc="0" arc2="0" side="0"/>
+	<vehicle name="germany_G113_SP_I_C" type="Tank" rightArc="0" leftArc="0" front="0" arc="0" arc2="0" side="0"/>
+	<vehicle name="germany_G114_Skorpian" type="Tank" rightArc="0" leftArc="0" front="0" arc="0" arc2="0" side="0"/>
+	<vehicle name="germany_G115_Typ_205_4_Jun" type="Tank" rightArc="0" leftArc="0" front="0" arc="0" arc2="0" side="0"/>
+	<vehicle name="germany_G116_Turan_III_prot" type="Tank" rightArc="0" leftArc="0" front="0" arc="0" arc2="0" side="0"/>
+	<vehicle name="germany_G117_Toldi_III" type="Tank" rightArc="0" leftArc="0" front="0" arc="0" arc2="0" side="0"/>
+	<vehicle name="germany_G118_VK4503" type="Tank" rightArc="0" leftArc="0" front="0" arc="0" arc2="0" side="0"/>
+	<vehicle name="germany_G119_Panzer58" type="Tank" rightArc="0" leftArc="0" front="0" arc="0" arc2="0" side="0"/>
+	<vehicle name="germany_G119_Pz58_Mutz" type="Tank" rightArc="0" leftArc="0" front="0" arc="0" arc2="0" side="0"/>
+	<vehicle name="germany_G120_M41_90" type="Tank" rightArc="0" leftArc="0" front="0" arc="0" arc2="0" side="0"/>
+	<vehicle name="germany_G120_M41_90_GrandFinal" type="Tank" rightArc="0" leftArc="0" front="0" arc="0" arc2="0" side="0"/>  
+	<vehicle name="germany_G121_Grille_15_L63" type="TD" rightArc="50" leftArc="50" front="0" arc="0" arc2="0" side="0"/>
+	<vehicle name="germany_G32_PzV_PzIV_ausf_Alfa_CN" type="Tank" rightArc="0" leftArc="0" front="0" arc="0" arc2="0" side="0"/>
+	<vehicle name="germany_G32_PzV_PzIV_CN" type="Tank" rightArc="0" leftArc="0" front="0" arc="0" arc2="0" side="0"/>
+	<vehicle name="germany_G45_G_Tiger" type="SPG" rightArc="5" leftArc="5" front="0" arc="0" arc2="0" side="0"/>
+	<vehicle name="germany_G65_JagdTiger_SdKfz_185" type="TD" rightArc="10" leftArc="10" front="0" arc="0" arc2="0" side="0"/>
+	<vehicle name="germany_G65_JagdTiger_SdKfz_185_IGR" type="TD" rightArc="10" leftArc="10" front="0" arc="0" arc2="0" side="0"/>
+	<vehicle name="japan_J20_Type_2605" type="Tank" rightArc="0" leftArc="0" front="0" arc="0" arc2="0" side="0"/>
+	<vehicle name="japan_J21_Type_91" type="Tank" rightArc="0" leftArc="0" front="0" arc="0" arc2="0" side="0"/>
+	<vehicle name="japan_J22_Type_95" type="Tank" rightArc="0" leftArc="0" front="0" arc="0" arc2="0" side="0"/>
+	<vehicle name="japan_J23_Mi_To" type="Tank" rightArc="0" leftArc="0" front="0" arc="0" arc2="0" side="0"/>
+	<vehicle name="japan_J24_Mi_To_130_tons" type="Tank" rightArc="0" leftArc="0" front="0" arc="0" arc2="0" side="0"/>
+	<vehicle name="japan_J25_Type_4" type="Tank" rightArc="0" leftArc="0" front="0" arc="0" arc2="0" side="0"/>
+	<vehicle name="japan_J26_Type_89" type="Tank" rightArc="0" leftArc="0" front="0" arc="0" arc2="0" side="0"/>
+	<vehicle name="japan_J27_O_I_120" type="Tank" rightArc="0" leftArc="0" front="0" arc="0" arc2="0" side="0"/>
+	<vehicle name="japan_J28_O_I_100" type="Tank" rightArc="0" leftArc="0" front="0" arc="0" arc2="0" side="0"/>
+	<vehicle name="uk_GB25_Loyd_Gun_Carriage" type="SPG" rightArc="8.5" leftArc="30" front="0" arc="0" arc2="0" side="0"/>
+	<vehicle name="uk_GB33_Sentinel_AC_I" type="Tank" rightArc="0" leftArc="0" front="0" arc="0" arc2="0" side="0"/>
+	<vehicle name="uk_GB35_Sentinel_AC_IV" type="Tank" rightArc="0" leftArc="0" front="0" arc="0" arc2="0" side="0"/>
+	<vehicle name="uk_GB84_Chieftain_Mk6" type="Tank" rightArc="0" leftArc="0" front="0" arc="0" arc2="0" side="0"/>
+	<vehicle name="uk_GB86_Centurion_Action_X" type="Tank" rightArc="0" leftArc="0" front="0" arc="0" arc2="0" side="0"/>
+	<vehicle name="uk_GB87_Chieftain_T95_turret" type="Tank" rightArc="0" leftArc="0" front="0" arc="0" arc2="0" side="0"/>
+	<vehicle name="usa_A106_M48A2_120" type="Tank" rightArc="0" leftArc="0" front="0" arc="0" arc2="0" side="0"/>
+	<vehicle name="usa_A107_T1_HMC" type="SPG" rightArc="30" leftArc="30" front="0" arc="0" arc2="0" side="0"/>
+	<vehicle name="usa_A108_T18_HMC" type="SPG" rightArc="21.21" leftArc="21.21" front="0" arc="0" arc2="0" side="0"/>
+	<vehicle name="usa_A109_T56_GMC" type="TD" rightArc="15" leftArc="15" front="0" arc="0" arc2="0" side="0"/>
+	<vehicle name="usa_A111_T25_Pilot" type="Tank" rightArc="0" leftArc="0" front="0" arc="0" arc2="0" side="0"/>
+	<vehicle name="usa_A112_T71E2" type="Tank" rightArc="0" leftArc="0" front="0" arc="0" arc2="0" side="0"/>  
+	<vehicle name="usa_A46_T3" type="TD" rightArc="15" leftArc="11.72" front="0" arc="0" arc2="0" side="0"/>
+	<vehicle name="usa_A63_M46_Patton_KR" type="Tank" rightArc="0" leftArc="0" front="0" arc="0" arc2="0" side="0"/>
+	<vehicle name="usa_A69_T110E5" type="Tank" rightArc="0" leftArc="0" front="0" arc="0" arc2="0" side="0"/>
+	<vehicle name="usa_A103_T71E1" type="Tank" rightArc="0" leftArc="0" front="25" arc="0" arc2="0" side="0"/>
+	<vehicle name="usa_A103_T71E1_IGR" type="Tank" rightArc="0" leftArc="0" front="0" arc="0" arc2="0" side="0"/>
+	<vehicle name="ussr_R118_T28_F30" type="Tank" rightArc="0" leftArc="0" front="0" arc="0" arc2="0" side="0"/>
+	<vehicle name="ussr_R119_Object_777" type="Tank" rightArc="0" leftArc="0" front="0" arc="0" arc2="0" side="0"/>
+	<vehicle name="ussr_R120_T22SR_A22" type="Tank" rightArc="0" leftArc="0" front="0" arc="0" arc2="0" side="0"/>
+	<vehicle name="ussr_R121_KV4_KTT" type="TD" rightArc="45" leftArc="15" front="0" arc="0" arc2="0" side="0"/>
+	<vehicle name="ussr_R122_T44_100" type="Tank" rightArc="0" leftArc="0" front="0" arc="0" arc2="0" side="0"/>
+	<vehicle name="ussr_R123_Kirovets_1" type="Tank" rightArc="0" leftArc="0" front="0" arc="0" arc2="0" side="0"/>
+	<vehicle name="ussr_R125_T_45" type="Tank" rightArc="0" leftArc="0" front="0" arc="0" arc2="0" side="0"/>
+	<vehicle name="ussr_R126_Object_730_5" type="Tank" rightArc="0" leftArc="0" front="0" arc="0" arc2="0" side="0"/>
+	<vehicle name="ussr_R127_T44_100_P" type="Tank" rightArc="0" leftArc="0" front="0" arc="0" arc2="0" side="0"/>
+	<vehicle name="ussr_R128_KV4_Kreslavskiy" type="Tank" rightArc="0" leftArc="0" front="0" arc="0" arc2="0" side="0"/>
+	<vehicle name="ussr_R39_KV_3" type="Tank" rightArc="0" leftArc="0" front="0" arc="0" arc2="0" side="0"/>
+	<vehicle name="ussr_R110_Object_260" type="Tank" front="150" arc="64" arc2="40" side="80"/>	
+    <vehicle name="ussr_R87_T62A_sport" type="Tank" arc="0" arc2="0" arc3="0"/>
+  </vehiclesData>
+</mmps>
