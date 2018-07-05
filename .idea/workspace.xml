@@ -2,301 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7995ad6b-60d6-4786-8209-c30240c49613" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/eleme.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/configs/ElementArmorPanelSettings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/ArmorPanel.fla" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/ArmorPanel.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/ArmorPanel.swf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/ArmorPanel.swfs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/ElementArmorPanelSettings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/com/greensock/dataTransfer/XMLParser.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/gfx/core/UIComponent.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/gfx/events/EventDispatcher.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/gfx/gfxfontlib.swf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/gfx/io/GameDelegate.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/gfx/managers/FocusHandler.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/gfx/managers/InputDelegate.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/gfx/ui/InputDetails.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/gfx/ui/NavigationCode.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/mx/utils/Delegate.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/GPCracker/DemoBattleFlash/BaseClass.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/produxion/util/XML2Object.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wargaming/FrameWalker.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wargaming/ingame/QuantityInClipBar.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wargaming/utils/DebugUtils.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/app/IApplication.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/data/constants/Errors.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/data/constants/KeyProps.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/data/constants/LobbyMetrics.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/data/constants/Values.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/data/daapi/base/DAAPIDataClass.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/data/managers/IToolTipParams.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/data/managers/ITooltipProps.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/gui/components/crosshair/ClipQuantityBar.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/gui/components/crosshair/CrosshairPanelArcade.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/gui/components/crosshair/CrosshairPanelBase.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/gui/components/crosshair/CrosshairPanelDAAPI.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/gui/components/crosshair/ReloadingTimer.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/gui/utils/FrameWalker.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/infrastructure/base/SimpleContainer.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/infrastructure/base/meta/IAbstractTweenMeta.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/infrastructure/base/meta/IAimMeta.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/infrastructure/base/meta/IApplicationMeta.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/infrastructure/base/meta/IBaseDAAPIModuleMeta.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/infrastructure/base/meta/ICacheManagerMeta.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/infrastructure/base/meta/IColorSchemeManagerMeta.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/infrastructure/base/meta/IContextMenuManagerMeta.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/infrastructure/base/meta/IEventLogManagerMeta.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/infrastructure/base/meta/IGameInputManagerMeta.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/infrastructure/base/meta/IGlobalVarsMgrMeta.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/infrastructure/base/meta/ILoaderManagerMeta.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/infrastructure/base/meta/ISoundManagerMeta.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/infrastructure/base/meta/ITutorialManagerMeta.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/infrastructure/base/meta/IUtilsManagerMeta.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/infrastructure/base/meta/IVoiceChatManagerMeta.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/infrastructure/base/meta/IWaitingViewMeta.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/infrastructure/base/meta/impl/AimMeta.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/infrastructure/events/LifeCycleEvent.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/infrastructure/events/TutorialEvent.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/infrastructure/exceptions/ArgumentException.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/infrastructure/exceptions/AssertionException.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/infrastructure/exceptions/DAAPIBindException.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/infrastructure/exceptions/InfrastructureException.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/infrastructure/exceptions/InvalidComponentCastException.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/infrastructure/exceptions/LifecycleException.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/infrastructure/exceptions/TypeCastException.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/infrastructure/exceptions/base/WGGUIException.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/infrastructure/interfaces/IClosePopoverCallback.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/infrastructure/interfaces/IColorScheme.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/infrastructure/interfaces/ICursor.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/infrastructure/interfaces/IDAAPIDataClass.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/infrastructure/interfaces/IDAAPIModule.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/infrastructure/interfaces/IDisplayObject.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/infrastructure/interfaces/IDisplayObjectContainer.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/infrastructure/interfaces/IDynamicContent.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/infrastructure/interfaces/IFormattedInt.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/infrastructure/interfaces/IGlobalVO.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/infrastructure/interfaces/IImage.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/infrastructure/interfaces/IImageData.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/infrastructure/interfaces/IImageUrlProperties.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/infrastructure/interfaces/IInteractiveObject.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/infrastructure/interfaces/IManagedContainer.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/infrastructure/interfaces/IManagedContent.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/infrastructure/interfaces/IMovieClip.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/infrastructure/interfaces/IPopOverCaller.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/infrastructure/interfaces/IReusable.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/infrastructure/interfaces/ISimpleTweenPropertiesVO.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/infrastructure/interfaces/ISprite.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/infrastructure/interfaces/IStrCaseProperties.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/infrastructure/interfaces/ITutorialCustomComponent.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/infrastructure/interfaces/ITween.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/infrastructure/interfaces/ITweenAnimatorHandler.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/infrastructure/interfaces/ITweenConstructionHandler.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/infrastructure/interfaces/ITweenHandler.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/infrastructure/interfaces/ITweenPropertiesVO.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/infrastructure/interfaces/IUIComponentEx.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/infrastructure/interfaces/IUserProps.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/infrastructure/interfaces/IView.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/infrastructure/interfaces/IWalletStatusVO.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/infrastructure/interfaces/entity/IDAAPIEntity.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/infrastructure/interfaces/entity/IDisplayable.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/infrastructure/interfaces/entity/IDisposable.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/infrastructure/interfaces/entity/IDragDropHitArea.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/infrastructure/interfaces/entity/IIdentifiable.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/infrastructure/interfaces/entity/ISerializable.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/infrastructure/interfaces/entity/ISoundable.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/infrastructure/interfaces/pool/IPool.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/infrastructure/interfaces/pool/IPoolItem.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/infrastructure/interfaces/pool/IPoolManager.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/infrastructure/managers/IAtlasManager.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/infrastructure/managers/ICacheManager.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/infrastructure/managers/IColorSchemeManager.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/infrastructure/managers/IContainerManager.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/infrastructure/managers/IContextMenuManager.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/infrastructure/managers/IEnvironmentManager.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/infrastructure/managers/IEventLogManager.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/infrastructure/managers/IGlobalVarsManager.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/infrastructure/managers/ILoaderManager.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/infrastructure/managers/IPopoverManager.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/infrastructure/managers/ISoundManager.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/infrastructure/managers/IStats.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/infrastructure/managers/ITooltipFormatter.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/infrastructure/managers/ITooltipMgr.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/infrastructure/managers/ITutorialManager.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/infrastructure/managers/ITweenManagerHelper.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/infrastructure/managers/IVoiceChatManager.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/infrastructure/managers/IWaitingView.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/mock/MockApplication.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/mock/MockCacheManager.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/mock/MockColorSchemeManager.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/mock/MockContainerManager.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/mock/MockContextMenuManager.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/mock/MockCursor.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/mock/MockDataUtils.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/mock/MockEnvironmentManager.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/mock/MockGameInputManager.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/mock/MockGlobalVarsManager.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/mock/MockLoaderManager.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/mock/MockPopoverManager.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/mock/MockSoundManager.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/mock/MockTextManager.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/mock/MockTooltipMgr.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/mock/MockTweenManager.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/mock/MockUtils.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/mock/MockVoiceChatManager.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/mock/MockWaitingView.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/mock/utils/MockAnimBuilder.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/mock/utils/MockAssertable.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/mock/utils/MockClassFactory.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/mock/utils/MockCommons.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/mock/utils/MockDateTime.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/mock/utils/MockEventCollector.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/mock/utils/MockFocusHandler.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/mock/utils/MockHelpLayout.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/mock/utils/MockIME.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/mock/utils/MockIcons.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/mock/utils/MockImageManager.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/mock/utils/MockJSON.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/mock/utils/MockLocale.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/mock/utils/MockNations.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/mock/utils/MockPopUpManager.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/mock/utils/MockScheduler.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/mock/utils/MockStyleSheetManager.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/mock/utils/MockTweenAnimator.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/mock/utils/MockVOManager.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/utils/IAnimBuilder.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/utils/IAssertable.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/utils/IClassFactory.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/utils/ICommons.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/utils/IDataUtils.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/utils/IDateTime.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/utils/IEventCollector.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/utils/IFocusHandler.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/utils/IGameInputManager.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/utils/IIME.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/utils/IIcons.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/utils/IImageManager.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/utils/ILocale.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/utils/INations.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/utils/IPopUpManager.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/utils/IScheduler.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/utils/IStyleSheetManager.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/utils/ITextManager.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/utils/ITweenAnimator.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/utils/ITweenManager.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/utils/IUtils.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/utils/IVOManager.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/utils/animation/ITweenConstruction.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/utils/helpLayout/HelpLayoutVO.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/utils/helpLayout/IHelpLayout.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/utils/helpLayout/IHelpLayoutComponent.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/net/wg/utils/helpLayout/PopupLayoutVO.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/org/idmedia/as3commons/util/Collection.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/org/idmedia/as3commons/util/Iterator.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/org/idmedia/as3commons/util/Map.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/org/idmedia/as3commons/util/Set.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/reload/ReloadSec.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/scaleform/clik/constants/ConstrainMode.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/scaleform/clik/constants/FocusMode.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/scaleform/clik/constants/InputValue.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/scaleform/clik/constants/InvalidationType.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/scaleform/clik/constants/NavigationCode.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/scaleform/clik/constants/ScrollBarDirection.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/scaleform/clik/constants/WrappingMode.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/scaleform/clik/controls/CoreList.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/scaleform/clik/controls/ScrollIndicator.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/scaleform/clik/controls/ScrollingList.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/scaleform/clik/core/CLIK.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/scaleform/clik/core/UIComponent.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/scaleform/clik/data/DataProvider.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/scaleform/clik/data/ListData.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/scaleform/clik/events/ButtonEvent.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/scaleform/clik/events/ComponentEvent.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/scaleform/clik/events/FocusHandlerEvent.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/scaleform/clik/events/InputEvent.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/scaleform/clik/events/ListEvent.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/scaleform/clik/events/ResizeEvent.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/scaleform/clik/interfaces/IDataProvider.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/scaleform/clik/interfaces/IListItemRenderer.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/scaleform/clik/interfaces/IScrollBar.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/scaleform/clik/interfaces/IUIComponent.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/scaleform/clik/layout/LayoutData.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/scaleform/clik/managers/FocusHandler.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/scaleform/clik/managers/InputDelegate.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/scaleform/clik/managers/PopUpManager.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/scaleform/clik/ui/InputDetails.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/scaleform/clik/utils/ConstrainedElement.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/scaleform/clik/utils/Constraints.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/scaleform/clik/utils/Padding.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/scaleform/clik/utils/WeakReference.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/scaleform/gfx/Extensions.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/scaleform/gfx/FocusEventEx.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/scaleform/gfx/FocusManager.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/scaleform/gfx/KeyboardEventEx.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/scaleform/gfx/MouseEventEx.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/models/objects/debugDot.dds" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/models/objects/debugDot.model" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/models/objects/debugDot.primitives" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/models/objects/debugDot.visual" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/models/objects/debugDot_2.dds" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/models/objects/debugDot_2.model" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/models/objects/debugDot_2.primitives" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/models/objects/debugDot_2.visual" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/python/mod_MeltyElement_ArmorPanel.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/release_example/res_mods/1.0.2.1/objects/debugDot.dds" beforeDir="false" afterPath="$PROJECT_DIR$/py_macro/release_example/res_mods/1.0.2.1/objects/debugDot.dds" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/release_example/res_mods/1.0.2.1/objects/debugDot.model" beforeDir="false" afterPath="$PROJECT_DIR$/py_macro/release_example/res_mods/1.0.2.1/objects/debugDot.model" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/release_example/res_mods/1.0.2.1/objects/debugDot.primitives" beforeDir="false" afterPath="$PROJECT_DIR$/py_macro/release_example/res_mods/1.0.2.1/objects/debugDot.primitives" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/release_example/res_mods/1.0.2.1/objects/debugDot.visual" beforeDir="false" afterPath="$PROJECT_DIR$/py_macro/release_example/res_mods/1.0.2.1/objects/debugDot.visual" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/release_example/res_mods/configs/xvm/default/@xvm.xc" beforeDir="false" afterPath="$PROJECT_DIR$/py_macro/release_example/res_mods/configs/xvm/default/@xvm.xc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/release_example/res_mods/configs/xvm/default/ArmorPanel.xc" beforeDir="false" afterPath="$PROJECT_DIR$/py_macro/release_example/res_mods/configs/xvm/default/ArmorPanel.xc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/release_example/res_mods/configs/xvm/default/battleLabels.xc" beforeDir="false" afterPath="$PROJECT_DIR$/py_macro/release_example/res_mods/configs/xvm/default/battleLabels.xc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/release_example/res_mods/configs/xvm/default/meltyElementArmorPanel.xc" beforeDir="false" afterPath="$PROJECT_DIR$/py_macro/release_example/res_mods/configs/xvm/default/meltyElementArmorPanel.xc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/release_example/res_mods/configs/xvm/default/meltyElementProtractor.xc" beforeDir="false" afterPath="$PROJECT_DIR$/py_macro/release_example/res_mods/configs/xvm/default/meltyElementProtractor.xc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/release_example/res_mods/configs/xvm/py_macro/meltyElement_ArmorPanel.py" beforeDir="false" afterPath="$PROJECT_DIR$/py_macro/release_example/res_mods/configs/xvm/py_macro/meltyElement_ArmorPanel.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/release_example/res_mods/configs/xvm/xvm.xc" beforeDir="false" afterPath="$PROJECT_DIR$/py_macro/release_example/res_mods/configs/xvm/xvm.xc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/release_example/res_mods/mods/shared_resources/xvm/res/MeltyElement/ArmorPanel/armorFrame.png" beforeDir="false" afterPath="$PROJECT_DIR$/py_macro/release_example/res_mods/mods/shared_resources/xvm/res/MeltyElement/ArmorPanel/armorFrame.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/release_example/res_mods/mods/shared_resources/xvm/res/MeltyElement/ArmorPanel/side_sqrt.png" beforeDir="false" afterPath="$PROJECT_DIR$/py_macro/release_example/res_mods/mods/shared_resources/xvm/res/MeltyElement/ArmorPanel/side_sqrt.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/release_example/res_mods/mods/shared_resources/xvm/res/MeltyElement/ArmorPanel/sqrt.png" beforeDir="false" afterPath="$PROJECT_DIR$/py_macro/release_example/res_mods/mods/shared_resources/xvm/res/MeltyElement/ArmorPanel/sqrt.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/release_example/res_mods/mods/shared_resources/xvm/res/MeltyElement/Protractor/LeftLine.png" beforeDir="false" afterPath="$PROJECT_DIR$/py_macro/release_example/res_mods/mods/shared_resources/xvm/res/MeltyElement/Protractor/LeftLine.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/release_example/res_mods/mods/shared_resources/xvm/res/MeltyElement/Protractor/LeftLineMax.png" beforeDir="false" afterPath="$PROJECT_DIR$/py_macro/release_example/res_mods/mods/shared_resources/xvm/res/MeltyElement/Protractor/LeftLineMax.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/release_example/res_mods/mods/shared_resources/xvm/res/MeltyElement/Protractor/RightLine.png" beforeDir="false" afterPath="$PROJECT_DIR$/py_macro/release_example/res_mods/mods/shared_resources/xvm/res/MeltyElement/Protractor/RightLine.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/release_example/res_mods/mods/shared_resources/xvm/res/MeltyElement/Protractor/RightLineMax.png" beforeDir="false" afterPath="$PROJECT_DIR$/py_macro/release_example/res_mods/mods/shared_resources/xvm/res/MeltyElement/Protractor/RightLineMax.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/release_example/res_mods/mods/shared_resources/xvm/res/MeltyElement/Protractor/circle.png" beforeDir="false" afterPath="$PROJECT_DIR$/py_macro/release_example/res_mods/mods/shared_resources/xvm/res/MeltyElement/Protractor/circle.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/release_example/res_mods/mods/shared_resources/xvm/res/MeltyElement/Protractor/circle_half.png" beforeDir="false" afterPath="$PROJECT_DIR$/py_macro/release_example/res_mods/mods/shared_resources/xvm/res/MeltyElement/Protractor/circle_half.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/release_example/res_mods/mods/shared_resources/xvm/res/MeltyElement/Protractor/circle_half_scaled.png" beforeDir="false" afterPath="$PROJECT_DIR$/py_macro/release_example/res_mods/mods/shared_resources/xvm/res/MeltyElement/Protractor/circle_half_scaled.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/release_example/res_mods/mods/shared_resources/xvm/res/MeltyElement/Protractor/middleLine.png" beforeDir="false" afterPath="$PROJECT_DIR$/py_macro/release_example/res_mods/mods/shared_resources/xvm/res/MeltyElement/Protractor/middleLine.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/release_example/res_mods/mods/shared_resources/xvm/res/MeltyElement/Protractor/middleLineMax.png" beforeDir="false" afterPath="$PROJECT_DIR$/py_macro/release_example/res_mods/mods/shared_resources/xvm/res/MeltyElement/Protractor/middleLineMax.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/release_example/res_mods/mods/shared_resources/xvm/res/MeltyElement/Protractor/realMidLineLeft.png" beforeDir="false" afterPath="$PROJECT_DIR$/py_macro/release_example/res_mods/mods/shared_resources/xvm/res/MeltyElement/Protractor/realMidLineLeft.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/release_example/res_mods/mods/shared_resources/xvm/res/MeltyElement/Protractor/realMidLineMid.png" beforeDir="false" afterPath="$PROJECT_DIR$/py_macro/release_example/res_mods/mods/shared_resources/xvm/res/MeltyElement/Protractor/realMidLineMid.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/release_example/res_mods/mods/shared_resources/xvm/res/MeltyElement/Protractor/realMidLineRight.png" beforeDir="false" afterPath="$PROJECT_DIR$/py_macro/release_example/res_mods/mods/shared_resources/xvm/res/MeltyElement/Protractor/realMidLineRight.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/python/meltyElement_ArmorPanel.py" beforeDir="false" afterPath="$PROJECT_DIR$/py_macro/source/python/meltyElement_ArmorPanel.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/resources/configs/@xvm.xc" beforeDir="false" afterPath="$PROJECT_DIR$/py_macro/source/resources/configs/@xvm.xc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/resources/configs/battleLabels.xc" beforeDir="false" afterPath="$PROJECT_DIR$/py_macro/source/resources/configs/battleLabels.xc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/resources/configs/xvm.xc" beforeDir="false" afterPath="$PROJECT_DIR$/py_macro/source/resources/configs/xvm.xc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/resources/font/ZeroThrees.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/py_macro/source/resources/font/ZeroThrees.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/resources/models/objects/debugDot.dds" beforeDir="false" afterPath="$PROJECT_DIR$/py_macro/source/resources/models/objects/debugDot.dds" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/resources/models/objects/debugDot.model" beforeDir="false" afterPath="$PROJECT_DIR$/py_macro/source/resources/models/objects/debugDot.model" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/resources/models/objects/debugDot.primitives" beforeDir="false" afterPath="$PROJECT_DIR$/py_macro/source/resources/models/objects/debugDot.primitives" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/resources/models/objects/debugDot.visual" beforeDir="false" afterPath="$PROJECT_DIR$/py_macro/source/resources/models/objects/debugDot.visual" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/resources/textures/ArmorPanel/armorFrame.png" beforeDir="false" afterPath="$PROJECT_DIR$/py_macro/source/resources/textures/ArmorPanel/armorFrame.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/resources/textures/ArmorPanel/side_sqrt.png" beforeDir="false" afterPath="$PROJECT_DIR$/py_macro/source/resources/textures/ArmorPanel/side_sqrt.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/resources/textures/ArmorPanel/sqrt.png" beforeDir="false" afterPath="$PROJECT_DIR$/py_macro/source/resources/textures/ArmorPanel/sqrt.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/resources/textures/Protractor/LeftLine.png" beforeDir="false" afterPath="$PROJECT_DIR$/py_macro/source/resources/textures/Protractor/LeftLine.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/resources/textures/Protractor/LeftLineMax.png" beforeDir="false" afterPath="$PROJECT_DIR$/py_macro/source/resources/textures/Protractor/LeftLineMax.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/resources/textures/Protractor/RightLine.png" beforeDir="false" afterPath="$PROJECT_DIR$/py_macro/source/resources/textures/Protractor/RightLine.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/resources/textures/Protractor/RightLineMax.png" beforeDir="false" afterPath="$PROJECT_DIR$/py_macro/source/resources/textures/Protractor/RightLineMax.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/resources/textures/Protractor/circle.png" beforeDir="false" afterPath="$PROJECT_DIR$/py_macro/source/resources/textures/Protractor/circle.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/resources/textures/Protractor/circle_half.png" beforeDir="false" afterPath="$PROJECT_DIR$/py_macro/source/resources/textures/Protractor/circle_half.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/resources/textures/Protractor/circle_half_scaled.png" beforeDir="false" afterPath="$PROJECT_DIR$/py_macro/source/resources/textures/Protractor/circle_half_scaled.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/resources/textures/Protractor/middleLine.png" beforeDir="false" afterPath="$PROJECT_DIR$/py_macro/source/resources/textures/Protractor/middleLine.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/resources/textures/Protractor/middleLineMax.png" beforeDir="false" afterPath="$PROJECT_DIR$/py_macro/source/resources/textures/Protractor/middleLineMax.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/resources/textures/Protractor/realMidLineLeft.png" beforeDir="false" afterPath="$PROJECT_DIR$/py_macro/source/resources/textures/Protractor/realMidLineLeft.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/resources/textures/Protractor/realMidLineMid.png" beforeDir="false" afterPath="$PROJECT_DIR$/py_macro/source/resources/textures/Protractor/realMidLineMid.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/resources/textures/Protractor/realMidLineRight.png" beforeDir="false" afterPath="$PROJECT_DIR$/py_macro/source/resources/textures/Protractor/realMidLineRight.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/xvm/ArmorPanel.xc" beforeDir="false" afterPath="$PROJECT_DIR$/py_macro/source/xvm/ArmorPanel.xc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/xvm/meltyElementArmorPanel.xc" beforeDir="false" afterPath="$PROJECT_DIR$/py_macro/source/xvm/meltyElementArmorPanel.xc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/xvm/meltyElementProtractor.xc" beforeDir="false" afterPath="$PROJECT_DIR$/py_macro/source/xvm/meltyElementProtractor.xc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/release/res_mods/1.0.2.2/scripts/client/gui/mods/mod_MeltyElement_ArmorPanel.py" beforeDir="false" afterPath="$PROJECT_DIR$/release/res_mods/1.0.2.2/scripts/client/gui/mods/mod_MeltyElement_ArmorPanel.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/flash/Armor_Panel/ArmorPanel.fla" beforeDir="false" afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/ArmorPanel.fla" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/flash/Armor_Panel/ArmorPanel.swf" beforeDir="false" afterPath="$PROJECT_DIR$/source/flash/Armor_Panel/ArmorPanel.swf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/flash/Armor_Panel/ArmorPanel.swfs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/flash/Armor_Panel/ElementArmorPanelSettings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/python/mod_MeltyElement_ArmorPanel.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/python/mod_MeltyElement_ArmorPanel.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -306,7 +18,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.6642772">
+    <splitter split-orientation="horizontal" split-proportion="0.66049385">
       <split-first>
         <leaf>
           <file leaf-file-name="scratch_2.py" pinned="false" current-in-tab="false">
@@ -324,10 +36,54 @@
           <file leaf-file-name="mod_MeltyElement_ArmorPanel.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/source/python/mod_MeltyElement_ArmorPanel.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="368">
-                  <caret line="672" column="51" selection-start-line="672" selection-start-column="51" selection-end-line="672" selection-end-column="51" />
+                <state relative-caret-position="329">
+                  <caret line="726" column="45" selection-start-line="726" selection-start-column="45" selection-end-line="726" selection-end-column="45" />
                   <folding>
                     <element signature="e#0#15#0" expanded="true" />
+                    <element signature="e#8960#16858#0" />
+                    <element signature="e#14345#16137#0" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
+            <entry file="file://D:/git/WoTModsProject/game_client/1.0.2.1/res/scripts/client/gui/mods/__init__.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-18">
+                  <caret line="31" column="56" selection-start-line="31" selection-start-column="56" selection-end-line="31" selection-end-column="56" />
+                  <folding>
+                    <element signature="e#109#125#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="config.py" pinned="false" current-in-tab="false">
+            <entry file="file://D:/git/WoTModsProject/game_client/mods/AdvancedAimingSystem/source/main/config.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="51">
+                  <caret line="3" column="70" selection-start-line="3" selection-start-column="55" selection-end-line="3" selection-end-column="70" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="builder.py" pinned="false" current-in-tab="false">
+            <entry file="file://D:/git/WoTModsProject/game_client/mods/AdvancedAimingSystem/builder.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="194">
+                  <caret line="225" column="20" selection-start-line="225" selection-start-column="8" selection-end-line="225" selection-end-column="20" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Flash.py" pinned="false" current-in-tab="false">
+            <entry file="file://D:/git/WoTModsProject/game_client/1.0.2.1/res/scripts/client/gui/Scaleform/Flash.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="306">
+                  <caret line="18" column="59" selection-start-line="18" selection-start-column="55" selection-end-line="18" selection-end-column="59" />
+                  <folding>
+                    <element signature="e#111#122#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -337,6 +93,24 @@
       </split-first>
       <split-second>
         <leaf>
+          <file leaf-file-name="mod_ArcadeBattleFlash.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/../MeltyElement_Sights/source/python/mod_ArcadeBattleFlash.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="256">
+                  <caret line="120" column="79" selection-start-line="120" selection-start-column="16" selection-end-line="120" selection-end-column="79" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="ElementArmorPanelSettings.xml" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/release/mods/configs/ElementArmorPanelSettings.xml">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="125">
+                  <caret line="18" column="40" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="40" />
+                </state>
+              </provider>
+            </entry>
+          </file>
           <file leaf-file-name="scratch_2.py" pinned="false" current-in-tab="false">
             <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_2.py">
               <provider selected="true" editor-type-id="text-editor">
@@ -367,11 +141,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="meltyElement_ArmorPanel.py" pinned="false" current-in-tab="true">
+          <file leaf-file-name="meltyElement_ArmorPanel.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/py_macro/source/python/meltyElement_ArmorPanel.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="176">
-                  <caret line="895" column="30" selection-start-line="895" selection-start-column="20" selection-end-line="895" selection-end-column="30" />
+                <state relative-caret-position="125">
+                  <caret line="892" column="29" selection-start-line="895" selection-start-column="20" selection-end-line="895" selection-end-column="30" />
                   <folding>
                     <element signature="e#88#103#0" expanded="true" />
                   </folding>
@@ -401,45 +175,51 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>showArmorPanel</find>
-      <find>tankType</find>
-      <find>Main_update</find>
+      <find>cfg_filename</find>
+      <find>os.path.splitext(__file__)</find>
+      <find>XMLConfigReader</find>
+      <find>__file__</find>
+      <find>os.path.splitext(__file__)[0] + '.xml'</find>
+      <find>g_globals['appConfigFile']</find>
+      <find>.</find>
+      <find>utills</find>
+      <find>opens</find>
+      <find>iscamAngle</find>
+      <find>isAP</find>
+      <find>cameraAngle</find>
+      <find>check(</find>
+      <find>ArmorPanelDebugRender</find>
+      <find>flashCall</find>
       <find>start</find>
-      <find>getDynamicArc</find>
-      <find>type</find>
-      <find>self.type</find>
-      <find>ResMgr</find>
-      <find>isNotEvent</find>
-      <find>print</find>
-      <find>destroy</find>
-      <find>_addTankName</find>
-      <find>getEquArmorX</find>
-      <find>res_mod</find>
-      <find>res_modPath</find>
-      <find>effar</find>
-      <find>getDesiredShotPoint</find>
-      <find>yawdx</find>
-      <find>toggleDrawDebugRender</find>
-      <find>66</find>
-      <find>remove</find>
-      <find>setup</find>
-      <find>setup(</find>
-      <find>getPlayerTankValues</find>
-      <find>&lt;</find>
-      <find>dynamic</find>
-      <find>start(</find>
-      <find>stopBattle</find>
-      <find>stopbattle</find>
-      <find>onleave</find>
+      <find>common.has_key</find>
+      <find>config.has_key</find>
+      <find>check</find>
+      <find>modPath</find>
+      <find>xml</find>
+      <find>common.</find>
+      <find>Ver.xmlpath</find>
+      <find>keyDict</find>
+      <find>ArmorPanel.ArmorPanelEnable</find>
+      <find>ArmorPanelEnableCallBack</find>
+      <find>flashsetting</find>
+      <find>self.isAP</find>
+      <find>sendFlashSettings</find>
+      <find>ArmorPanel(</find>
     </findStrings>
     <replaceStrings>
       <replace>armorPanel</replace>
       <replace>ArmorPanel</replace>
       <replace>/gui/flash/</replace>
       <replace>ElementArmorPanelSettings</replace>
+      <replace>config.has_key</replace>
+      <replace>xmlRoot.has_key</replace>
+      <replace>xmlRoot.</replace>
     </replaceStrings>
     <dirStrings>
       <dir>D:\Games\World_of_Tanks\res\scripts</dir>
+      <dir>D:\git\WoTModsProject\game_client\mods\AdvancedAimingSystem</dir>
+      <dir>D:\git\WoTModsProject\game_client\mods\</dir>
+      <dir>D:\git\WoTModsProject\game_client\1.0.2.1\res\scripts\client\gui\mods</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -486,7 +266,7 @@
             <path>
               <item name="MeltyElement_Effective_Armor_Mod" type="b2602c69:ProjectViewProjectNode" />
               <item name="MeltyElement_Effective_Armor_Mod" type="462c0819:PsiDirectoryNode" />
-              <item name="source" type="462c0819:PsiDirectoryNode" />
+              <item name="release" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="MeltyElement_Effective_Armor_Mod" type="b2602c69:ProjectViewProjectNode" />
@@ -506,7 +286,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Python" />
-    <property name="last_opened_file_path" value="D:/Games/World_of_Tanks/res/scripts" />
+    <property name="last_opened_file_path" value="D:/git/WoTModsProject/game_client/1.0.2.1/res/scripts/client/gui/mods" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
@@ -633,20 +413,70 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/py_macro/source/python/meltyElement_ArmorPanel.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="895" column="30" selection-start-line="895" selection-start-column="20" selection-end-line="895" selection-end-column="30" />
+        <state relative-caret-position="125">
+          <caret line="892" column="29" selection-start-line="895" selection-start-column="20" selection-end-line="895" selection-end-column="30" />
           <folding>
             <element signature="e#88#103#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://D:/git/WoTModsProject/game_client/1.0.2.1/res/scripts/client/gui/Scaleform/Flash.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="59" selection-start-line="18" selection-start-column="55" selection-end-line="18" selection-end-column="59" />
+          <folding>
+            <element signature="e#111#122#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/git/WoTModsProject/game_client/mods/AdvancedAimingSystem/builder.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="225" column="20" selection-start-line="225" selection-start-column="8" selection-end-line="225" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/git/WoTModsProject/game_client/mods/AdvancedAimingSystem/source/main/config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="70" selection-start-line="3" selection-start-column="55" selection-end-line="3" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/git/WoTModsProject/game_client/1.0.2.1/res/scripts/client/gui/mods/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-18">
+          <caret line="31" column="56" selection-start-line="31" selection-start-column="56" selection-end-line="31" selection-end-column="56" />
+          <folding>
+            <element signature="e#109#125#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../MeltyElement_Sights/source/python/mod_ArcadeBattleFlash.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="120" column="79" selection-start-line="120" selection-start-column="16" selection-end-line="120" selection-end-column="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/release/mods/configs/ElementArmorPanelSettings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="18" column="40" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/source/python/mod_MeltyElement_ArmorPanel.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="672" column="51" selection-start-line="672" selection-start-column="51" selection-end-line="672" selection-end-column="51" />
+        <state relative-caret-position="329">
+          <caret line="726" column="45" selection-start-line="726" selection-start-column="45" selection-end-line="726" selection-end-column="45" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
+            <element signature="e#8960#16858#0" />
+            <element signature="e#14345#16137#0" />
           </folding>
         </state>
       </provider>
