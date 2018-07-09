@@ -301,13 +301,13 @@ class EffectiveArmorPanel:
         as_event('ON_ARMOR')
 
     @staticmethod
-    def getEquArmor(armor, turretYawDeg, cameraTurretYawDeg, armorAngel):
+    def getEquArmor(armor, turretYawDeg, cameraTurretYawDeg, armorAngle):
         if eAP.isCamAngle:
             turretRotation = cameraTurretYawDeg
         else:
             turretRotation = turretYawDeg
         # TODO - Hijack some functions from _CrosshairShotResults for armor w/ normalization and the works
-        combinedAngle = math.acos(math.cos(math.radians(abs(turretRotation))) * math.cos(math.radians(armorAngel)))
+        combinedAngle = math.acos(math.cos(math.radians(abs(turretRotation))) * math.cos(math.radians(armorAngle)))
         norm = 5
         if armor < 30:
             norm *= 4

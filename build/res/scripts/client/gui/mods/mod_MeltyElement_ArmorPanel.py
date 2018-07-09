@@ -531,9 +531,9 @@ class ArmorPanel(Flash):
 
 
     @staticmethod
-    def getEquArmor(armor, turretRotation, armorAngel):
+    def getEquArmor(armor, turretRotation, armorAngle):
         # TODO - Hijack some functions from _CrosshairShotResults for armor w/ normalization and the works
-        combinedAngle = math.acos(math.cos(math.radians(abs(turretRotation))) * math.cos(math.radians(armorAngel)))
+        combinedAngle = math.acos(math.cos(math.radians(abs(turretRotation))) * math.cos(math.radians(armorAngle)))
         norm = 5
         if armor < 30:
             norm *= 4
