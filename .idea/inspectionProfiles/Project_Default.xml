@@ -1,30 +1,38 @@
 <component name="InspectionProjectProfileManager">
   <profile version="1.0">
+    <description>ysy</description>
     <option name="myName" value="Project Default" />
-    <inspection_tool class="PyPep8Inspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+    <inspection_tool class="PyMandatoryEncodingInspection" enabled="true" level="ERROR" enabled_by_default="true" />
+    <inspection_tool class="PyMissingOrEmptyDocstringInspection" enabled="false" level="ERROR" enabled_by_default="false" />
+    <inspection_tool class="PyMissingTypeHintsInspection" enabled="true" level="ERROR" enabled_by_default="true" />
+    <inspection_tool class="PyPep8Inspection" enabled="false" level="WEAK WARNING" enabled_by_default="false">
       <option name="ignoredErrors">
         <list>
-          <option value="W601" />
+          <option value="E501" />
+          <option value="E701" />
         </list>
       </option>
     </inspection_tool>
     <inspection_tool class="PyPep8NamingInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
       <option name="ignoredErrors">
         <list>
+          <option value="N806" />
           <option value="N802" />
           <option value="N803" />
-          <option value="N806" />
         </list>
       </option>
     </inspection_tool>
     <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
       <option name="ignoredIdentifiers">
         <list>
-          <option value="GUI" />
-          <option value="BigWorld" />
-          <option value="ResMgr" />
-          <option value="Math" />
+          <option value="gui.addRoot" />
+          <option value="gui.delRoot" />
           <option value="tutorial.control.battle.functional._StaticObjectMarker3D._StaticObjectMarker3D__model" />
+          <option value="gui.screenResolution" />
+          <option value="ResMgr" />
+          <option value="BigWorld" />
+          <option value="Math" />
+          <option value="float.y" />
         </list>
       </option>
     </inspection_tool>
